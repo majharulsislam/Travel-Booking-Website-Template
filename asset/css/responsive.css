@@ -1,0 +1,1307 @@
+@media only screen and (min-width: 1401px){
+	.booking_details_title h3{
+		max-width: 70%;
+	}
+	
+}
+
+@media only screen and (max-width: 1400px){
+
+	.booking_details_box_border:before,.booking_details_box_border:after{
+		top: 110px;
+	}
+	.booking_details_title h3 {
+	    max-width: 75%;
+	}
+	.booking_details_title h3.setavailable {
+	    font-size: 14px;
+	    line-height: 20px;
+	    padding: 9px 15px 9px 20px;
+	}
+	.book_dates p{
+		margin-right: 60px;
+	}
+	.booking_details_box h3 {
+	    font-size: 16px;
+	}
+	.booking_details_second p:before, .booking_details_second p:after{
+		width: 25%;
+	}
+	.add_passengar_ticket_box .col-md-4, .add_passengar_ticket_box .col-md-8{
+		width: 50%;
+	}
+	.nationality.has_label{
+		margin-top: 35px;
+	}
+	.prova_top_area{
+		flex-wrap: wrap;
+	}
+	.train_shedule, .time_with_area{
+		flex-basis: 25%;
+	}
+
+}
+@media only screen and (min-width: 1200px) and (max-width: 1400px) {
+	/*homepage*/
+	nav.navbar_area ul li a{
+		font-size: 16px;
+	}
+	/*booking details*/
+	.train_booking_details_left_space{
+		padding: 20px 15px;
+	}
+	.train_booking_details_left_space div#drf {
+	    width: 100% !important;
+	    flex-basis: 100%;
+	}
+	.prova_titl, .prova_days, .time_with_day, .only_time{
+		width: 50%;
+	}
+	.train_ticket_book_now_items .row .col-md-2 {
+	    width: 33.33%;
+	    margin-bottom: 30px;
+	}
+	.others_date_btn{
+		margin-top: 10px;
+	}
+	
+
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1200px) {
+
+	/*HomePage*/
+	section.irctc_train_booking_area h2, section.irctc_train_booking_area p{
+		margin: 0;
+	}
+
+	/*privacy policy*/
+	section.privacy_policy_area {
+	    margin: 60px 0;
+	}
+	section.privacy_policy_area h2 {
+	    font-size: 24px;
+	    margin-bottom: 20px;
+	}
+	.privacy_policy_left_side {
+		margin: 0;
+	}
+	.privacy_policy_right_side {
+	    margin-left: 25px;
+	}
+	.privacy_policy_left_side ul li a {
+	    font-size: 14px;
+	}
+
+	.single_policy_details p {
+	    font-size: 14px;
+	}
+	.single_policy_details h3 {
+	    font-size: 16px;
+	    line-height: 30px;
+	    margin: 20px 0;
+	}
+
+	/*pnr status*/
+	.pnr_sbtn{
+		width: 30%;
+	}
+	section.pnr_status_details_area .row .col-md-7{
+		width: 80%;
+	}
+
+	/*booking details view*/
+	.if_seat_have a {
+	    font-size: 16px;
+	    line-height: 20px;
+	    padding: 12px 38px 11px;
+	}
+
+
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1200px){
+
+	/*home page*/
+	nav.navbar_area {
+	    overflow: hidden;
+	}
+	nav.navbar_area ul {
+	    overflow-x: scroll;
+	    white-space: nowrap;
+	}
+	nav.navbar_area ul li {
+	    padding: 0 12px;
+	}
+	.TrainSearch {
+	    flex-wrap: wrap;
+	    background: none;
+	    box-shadow: none;
+	}
+	.CalenderBlock, .buttonBlock, button#SearchTrainbtn{
+		width: 100%;
+	}
+	.fromStation, .toStation, .dateSection, .nextDays {
+	    width: 48%;
+	    background: #fff;
+	    border-radius: 5px;
+	}
+	.fromStation, .dateSection{
+		margin-right: 8px;
+		margin-bottom: 10px;
+	}
+	.dateSection {
+	    padding: 8px 28px;
+	}
+	.toStation, .nextDays{
+		margin-left: 8px;
+		margin-bottom: 10px;
+	}
+	.nextDays{
+		padding: 12px 28px;
+	}
+	.user-input-wrp input {
+	    font-size: 16px;
+	}
+	.user-input-wrp label {
+	    font-size: 12px;
+	}
+	.interchange-name{
+		left: -20px;
+	}
+	section#why_choose_area h2{
+		margin-bottom: 35px;
+	}
+	section#why_choose_area .row .col-md-3 {
+	    width: 33.33%;
+	}
+	.single_why_choose{
+		padding: 20px;
+	}
+	.single_why_choose p {
+	    font-size: 14px;
+	    line-height: 22px;
+	}
+	.desktop_show.tablet_show_faq {
+	    display: block;
+	}
+
+	/*faqs*/
+	.travel_book_faqs_area {
+	    padding: 60px 0;
+	}
+	.travel_book_faq_items .tab {
+	    padding: 0;
+	    margin-right: 20px;
+	}
+	.travel_book_faq_items .tabcontent {
+	    width: 66%;
+	}
+	.travel_book_faq_items .tab button {
+	    font-size: 14px;
+	    padding: 14px 0;
+	}
+	.travel_book_faq_items button.accordion-button {
+	    font-size: 16px;
+	}
+	.travel_book_faq_items .tabcontent p {
+	    font-size: 14px;
+	    line-height: 23px;
+	}
+	.travel_book_faq_items .tabcontent .accordion-body {
+	    padding-top: 0;
+	}
+	.travel_book_faq_items .tabcontent .accordion-button::before {
+	    right: 0;
+	    left: auto;
+	}
+
+	/*booking*/
+	.booking_deatils_left_side_area, .booking_details_right_side{
+		margin-top: -110px;
+	}
+	.booking_details_form_area h2{
+		font-size: 18px;
+		line-height: 22px;
+	}
+	.booking_details_box, .common_details_box {
+	    padding: 0 20px;
+	}
+	.booking_details_title h3 {
+	    padding: 14px 0 20px;
+	}
+	.booking_details_box h3{
+		font-size: 14px;
+	    line-height: 18px;
+	}
+	.booking_details_title h3 {
+	    min-height: 116px;
+	}
+	.booking_details_title h3.setavailable {
+	    font-size: 10px;
+	    line-height: 13px;
+	    font-family: 'AmazonEmber_Rg';
+	    padding: 4px 4px 5px 7px;
+	    min-height: inherit;
+	}
+	.book_dates p {
+	    margin-right: 0;
+	}
+	.book_dates {
+	    justify-content: space-between;
+	    flex-wrap: wrap;
+	}
+	.booking_details_time {
+		flex-direction: column;
+		padding: 23px 0 15px 27px;
+		background: url(../img/icons/angle-arrow.svg);
+	    background-repeat: no-repeat;
+	    background-size: 23px;
+	    background-position-y: 25px;
+	}
+	.booking_details_second {
+	    padding: 0;
+	    text-align: right;
+	}
+	.booking_details_second p:after{
+		content: none;
+	}
+	.booking_details_second p:before {
+	    right: 25%;
+	    left: auto;
+	    width: 20%;
+	}
+	.booking_details_box_border:before, .booking_details_box_border:after {
+	    height: 24px;
+	    top: 105px;
+	}
+	.booking_details_time .round-dashed-left, .booking_details_time .round-dashed-right {
+	    height: 24px;
+	    width: 24px;
+	    left: -32px;
+	    top: -12px;
+	}
+	.booking_details_time .round-dashed-right {
+	    right: -32px;
+	    left: auto;
+	}
+	.change_branding_point {
+	    flex-direction: column;
+	}
+	.change_branding_point h3 {
+	    font-family: 'Amazon-Ember-Medium';
+	    margin-bottom: 10px;
+	    color: #0484C0;
+	}
+	.select_branding {
+	    width: 100%;
+	}
+	.select_branding select {
+	    border-radius: 3px;
+	    padding: 6px 20px;
+	    font-size: 14px;
+	    line-height: 18px;
+	}
+	.passengar_require.prerror {
+	    text-align: left !important;
+	}
+	.gender_area, .namebox {
+	    margin: 15px 0;
+	}
+	.add_passengar_ticket_box  .col-md-4 {
+	    order: 2;
+	}
+	.common_input_box, .berth_prefer select.form-select, .nationality select.form-select {
+	    border: 1px solid #707070;
+	    padding: 6px 20px;
+	    border-radius: 3px;
+	    margin-bottom: 15px;
+	}
+	.common_input_box input::placeholder, .add_passengar_ticket_box select{
+	    font-family: 'Amazon-Ember-Medium';
+	    font-size: 14px;
+	    line-height: 18px;
+	}
+	.has_label {
+	    margin-top: 15px;
+	}
+	.passenger_ticket_btn {
+	    flex-wrap: wrap;
+	}
+	.save_btn {
+	    flex-basis: 47%;
+	    margin: 0 0 15px 0;
+	}
+	.saveadd_btn.save_btn {
+	    margin: 0 0 0 15px;
+	}
+	.save_btn button {
+	    font-size: 14px;
+	    line-height: 18px;
+	    padding: 6px 0;
+	    width: 100%;
+	}
+	.enable_switch {
+	    margin-bottom: 6px;
+	}
+	.pass_ready_text {
+	    margin: 17px 0;
+	}
+	.pass_ready_text h3 {
+	    font-size: 14px;
+	    line-height: 18px;
+	    margin-left: 11px;
+	}
+	.pass_ready_text h3 span {
+	    margin-top: 3px;
+	}
+	.verifybtn button {
+	    font-size: 14px;
+	    line-height: 18px;
+	    padding: 6px 21px;
+	    border-radius: 3px;
+	}
+	.verifyin {
+	    padding: 3px 10px;
+	}
+	.irtc_ac_area {
+	    margin: 15px 0;
+	    flex-direction: column;
+	}
+	.irtc_ac_area h3, .irtc_ac_area a {
+	    font-size: 12px;
+	    line-height: 15px;
+	}
+	.tax_benefits_box {
+	    padding: 10px 20px 6px;
+	}
+	.additional_preference_box {
+	    padding: 6px 20px;
+	    margin-bottom: 30px;
+	}
+	.add_passengar_ticket_box .col-md-4, .add_passengar_ticket_box .col-md-8 {
+	    width: 100%;
+	}
+
+	.additional_preference_box select, .cancellation_first label p, .cancellation_second label p, .free_summery_ticke h3 {
+	    font-size: 14px;
+	    line-height: 18px;
+	}
+	.cancel_person p, .cancel_person a{
+		font-size: 14px;
+		line-height: 20px;
+	}
+	.free_cancellation_box p.onlyticket{
+		font-size: 12px;
+		line-height: 20px;
+	}
+	.free_summery_total{
+		margin-top: 15px;
+	}
+	.free_summery_ticke{
+		margin-bottom: 30px;
+	}
+	.free_summery_btn a {
+	    font-size: 18px;
+	    line-height: 22px;
+	    padding: 4px 0;
+	}
+
+	/*booking details*/
+	section.train_booking_details_area {
+	    margin-top: 60px;
+	    margin-bottom: 80px;
+	}
+	.red_bg.booking_d {
+	    height: 350px;
+	}
+	section.booking_detail_banner_area.desktop_show.tb_show {
+	    display: block;
+	}
+	section.booking_detail_banner_area{
+		margin-top: -325px;
+	}
+	.train_booking_details_left_space {
+	    padding: 15px;
+	}
+	.FilterTitle p {
+	    font-size: 14px;
+	    line-height: 18px;
+	}
+
+	.train_booking_details_area .mrl {
+	    margin-left: 10px;
+	}
+
+	.quick_filter_check_item label, .timer_days_item p {
+	    font-size: 14px;
+	    line-height: 18px;
+	}
+
+	.train_booking_details_left_space .signin_check label:before {
+	    width: 14px;
+	    height: 14px;
+	    margin-right: 5px;
+	}
+	.train_booking_details_left_space .signin_check input:checked + label:after {
+	    left: 2px;
+	    top: 1px;
+	}
+	.timer_days_item .inner-section p {
+	    margin-bottom: 10px;
+	}
+	.train_booking_details_left_space div#drf {
+	    width: 100% !important;
+	    flex-basis: 100%;
+	}
+	.train_booking_details_right_space h2 {
+	    font-size: 20px;
+	    line-height: 24px;
+	}
+
+	.prova_titl, .prova_days, .time_with_day, .only_time {
+	    flex-basis: 30%;
+	}
+	.prova_days {
+	    flex-direction: column;
+	}
+	.prova_titl h3 {
+	    font-size: 16px;
+	    line-height: 20px;
+	}
+	.time_with_day p, .time_with_area p {
+	    font-size: 14px;
+	    line-height: 18px;
+	}
+	.only_time p:before{
+		width: 25%;
+		left: 20px;
+	}
+	.only_time p:after{
+		width: 25%;
+		right: 20px;
+	}
+	.train_ticket_book_now_items .row .col-md-2 {
+	    width: 33.33%;
+	    margin-bottom: 30px;
+	}
+	.others_date_btn{
+		margin-top: 10px;
+	}
+
+	/*bookings details view*/
+	.btn_price_view {
+	    margin: 30px 10px 33px 0;
+	}
+
+	.btn_price_view a {
+	    font-size: 14px;
+	    line-height: 20px;
+	    padding: 6px 20px 5px;
+	}
+	.seat_detils_single_item h3 {
+	    font-size: 16px;
+	    line-height: 23px;
+	}
+	.seat_detils_single_item p {
+	    font-size: 12px;
+	    line-height: 18px;
+	}
+
+
+}
+
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+
+	/*HomePage*/
+	section.irctc_train_booking_area{
+		margin: 0;
+	}
+	section.irctc_train_booking_area p{
+		margin-bottom: 65px;
+	}
+
+	/*footer*/
+	.tablet_show{
+		display: block;
+	}
+	.desktop_show{
+		display: none;
+	}
+	.footer_menu{
+		display: none;
+	}
+	.footer_top_area {
+	    padding: 20px 0 30px;
+	}
+	/*==========End Home page==========*/
+
+	/*contact page*/
+	.note_text {
+	    margin-left: 55px;
+	}
+
+	/*privacy policy*/
+	section.privacy_policy_area {
+	    margin: 60px 0;
+	}
+	section.privacy_policy_area h2 {
+	    font-size: 24px;
+	    margin-bottom: 20px;
+	}
+	.privacy_policy_left_side {
+		margin: 0;
+	}
+	.privacy_policy_right_side {
+	    margin-left: 15px;
+	}
+	.privacy_policy_left_side ul li a {
+	    font-size: 14px;
+	}
+
+	.single_policy_details p {
+	    font-size: 14px;
+	}
+	.single_policy_details h3 {
+	    font-size: 16px;
+	    line-height: 30px;
+	    margin: 20px 0;
+	}
+
+	/*pnr status*/
+	.pnr_in {
+	    width: 70%;
+	}
+	.pnr_sbtn {
+	    width: 30%;
+	}
+	section.pnr_status_details_area .row .col-md-7{
+		width: 80%;
+	}
+
+	/*booking details*/
+	.only_time p:before, .only_time p:after{
+		content: none;
+	}
+	.book_now_text {
+	    padding: 14px 10px 15px;
+	}
+	.btn_book_now a{
+		padding: 7px 0;
+	}
+
+	/*booking details view*/
+	.if_seat_have a {
+	    font-size: 14px;
+	    line-height: 20px;
+	    padding: 8px 16px 9px;
+	}
+
+}
+
+
+@media only screen and (max-width: 767px) {
+
+	.mobile_show{
+		display: block;
+	}
+
+	/*==========homepage==========*/
+	header#header {
+	    display: none;
+	}
+	.section_padding{
+		padding: 0 30px;
+	}
+
+	section#book_your_ticket_area{
+		margin: 0;
+	}
+	section#book_your_ticket_area h2 {
+	    font-size: 18px;
+	    line-height: 22px;
+	    padding: 15px 0;
+	}
+	#book_your_ticket_area h3 {
+	    display: none;
+	}
+	.fromStation, .toStation {
+	    width: 100%;
+	    background: #fff;
+	    border-radius: 5px;
+	}
+	.toStation {
+	    margin: 15px 0;
+	}
+	.CalenderBlock, .SearchTrain-btn {
+	    width: 100%;
+	}
+	.buttonBlock {
+	    width: 100%;
+	    margin-bottom: 30px;
+	}
+	.TrainSearch {
+	    flex-wrap: wrap;
+	    background: none;
+	    box-shadow: inherit;
+	}
+	.dateSection {
+	    width: 47%;
+	    background: #fff;
+	    border-radius: 5px;
+	    padding: 12px;
+	    margin-right: 7px;
+	}
+	.nextDays {
+	    width: 49%;
+	    background: #fff;
+	    border-radius: 5px;
+	    margin-left: 7px;
+	    padding: 12px;
+	}
+	div#newCal{
+		margin: 0;
+	}
+	.interchange-name {
+	    top: -35%;
+	    left: 80%;
+	    transform: rotate(90deg);
+	}
+
+	section#exclusive_offer_area {
+	    width: 368px;
+	    margin: 0 auto;
+	    box-shadow: 0 3px 6px rgba(0,0,0,0.16);
+	}
+	section#exclusive_offer_area h2 {
+	    font-size: 16px;
+	    line-height: 20px;
+	    text-align: center;
+	    padding: 15px 0;
+	    text-transform: uppercase;
+	}
+	.ex_offer_img img {
+	    width: 79px;
+	}
+
+	.ex_offer_item h3 {
+	    font-size: 9px;
+	    line-height: 12px;
+	}
+
+	.ex_offer_item p {
+	    font-size: 6px;
+	    line-height: 8px;
+	}
+
+	.ex_offer_item a {
+	    font-size: 8px;
+	    line-height: 10px;
+	    padding: 4px 14px;
+	}
+	.single_offer_border{
+		margin-bottom: 30px;
+	}
+	.single_ex_offter span {
+	    margin: 0 20px;
+	}
+
+	.exclusive-custom-arrow.slick-custom-arrow-left.slick-arrow i, .exclusive-custom-arrow.slick-custom-arrow-right.slick-arrow i {
+	    padding: 5px 10px;
+	    font-size: 12px;
+	    top: -30px;
+	    right: 12px;
+	}
+	.exclusive-custom-arrow.slick-custom-arrow-right.slick-arrow i {
+	    right: -15px;
+	}
+
+	section#why_choose_area h2 {
+	    font-size: 16px;
+	    line-height: 20px;
+	    margin: 18px;
+	}
+	#why_choose_area .row .col-md-3 {
+	    width: 50%;
+	    text-align: center;
+	}
+	.status_img h3 {
+	    font-size: 14px;
+	    line-height: 18px;
+	}
+	.status_img h3 img {
+	    display: block;
+	    margin: 0 auto;
+	    margin-bottom: 6px;
+	}
+	.single_why_choose {
+	    padding: 15px;
+	    min-height: 210px;
+	}
+	.single_why_choose p {
+	    font-size: 12px;
+	    line-height: 18px;
+	    margin-top: 10px;
+	}
+
+	section.top_train_routes_area {
+	    margin: 0;
+	}
+	section.top_train_routes_area h2 {
+	    font-size: 18px;
+	    line-height: 22px;
+	    margin: 0;
+	}
+	.single_routes_search p {
+	    font-size: 12px;
+	    line-height: 18px;
+	    font-family: 'AmazonEmber_Rg';
+	    flex-basis: 100%;
+	}
+	.single_routes_search {
+	    flex-wrap: wrap;
+	    border: none;
+	    padding: 7px 0;
+	}
+	.single_routes_search a {
+	    font-size: 12px;
+	    line-height: 15px;
+	    margin-left: 20px;
+	}
+	.single_routes_search p img {
+	    width: 10px;
+	    margin-right: 8px;
+	}
+
+	section.irctc_train_booking_area h2 {
+	    margin: 20px 0 5px;
+	    font-size: 18px;
+	    line-height: 22px;
+	}
+
+	section.irctc_train_booking_area {
+	    margin: 0;
+	}
+
+	section.irctc_train_booking_area p {
+	    font-size: 12px;
+	    line-height: 25px;
+	    text-align: center;
+	    margin-bottom: 60px;
+	}
+	/*==========End Home Page=========*/
+
+	/*====Contact Page===*/
+	.contact_form_area .submit_btn button{
+		width: 100%;
+	}
+	.contact_form_area p {
+	    font-size: 16px;
+	}
+	.check_input_wrap label{
+		font-size: 16px;
+		padding: 26px 62px;
+	}
+	.note_text {
+	    margin-left: 20px;
+	    margin-top: 20px;
+	}
+	.note_text p{
+		line-height: 25px;
+	}
+
+	/*privacy policy*/
+	section.privacy_policy_area {
+	    margin: 60px 0;
+	}
+	section.privacy_policy_area h2 {
+		margin-bottom: 20px;
+	}
+	.privacy_policy_left_side {
+	    display: none;
+	}
+	.privacy_policy_right_side {
+	    margin: 0;
+	}
+	.single_policy_details p {
+	    font-size: 14px;
+	}
+	.single_policy_details h3 {
+	    font-size: 16px;
+	    line-height: 25px;
+	    margin: 15px 0;
+	}
+
+	/*pnr status*/
+	section.check_pnr_status_area {
+	    padding: 20px 0 35px;
+	}
+	.check_pnr_status_area h1 {
+	    font-size: 24px;
+	    margin-bottom: 10px;
+	}
+	.pnr_in {
+	    width: 68%;
+	}
+	.pnr_sbtn {
+    	width: 32%;
+	}
+	.pnr_sbtn button {
+	    font-size: 14px;
+	    padding: 12px;
+	}
+	.pnr_in input::placeholder {
+	    font-size: 14px;
+	}
+	.pnr_info {
+	    margin: 0;
+	}
+	.pnr_info p img {
+	    margin-right: 15px;
+	}
+	.pnr_sub_info {
+	    margin-left: 25px;
+	}
+	.pnr_info p, .pnr_details_text_first p {
+	    margin-bottom: 15px;
+	}
+	.pnr_info p, .pnr_details_text_first p {
+	    margin-bottom: 6px;
+	}
+	.pnr_details_text_faqs h3 {
+	    line-height: 25px;
+	}
+
+	/*faqs*/
+	.travel_book_faqs_area {
+	    padding: 60px 0;
+	}
+	.travel_book_faq_items .tab {
+	    width: 100%;
+	    padding-right: 0;
+	    margin-bottom: 25px;
+	    display: flex;
+	    flex-wrap: wrap;
+	    justify-content: space-between;
+	}
+	.travel_book_faq_items .tabcontent {
+	    width: 100%;
+	}
+	.travel_book_faq_items .tab button {
+	    font-size: 14px;
+	    padding: 10px 0;
+	    width: 45%;
+	}
+
+	/*booking*/
+	.red_bg {
+	    height: 214px;
+	}
+	.booking_deatils_left_side_area {
+	    margin-top: -175px;
+	}
+	.booking_details_form_area h2 {
+	    font-size: 18px;
+	    line-height: 22px;
+	    padding: 9px 0;
+	}
+	.booking_details_box, .common_details_box {
+	    padding: 0 20px;
+	}
+	.booking_details_title h3 {
+	    padding: 14px 0 20px;
+	}
+	.booking_details_box h3{
+		font-size: 14px;
+	    line-height: 18px;
+	}
+	.booking_details_title h3 {
+	    min-height: 100px;
+	}
+	.booking_details_title h3.setavailable {
+	    font-size: 10px;
+	    line-height: 13px;
+	    font-family: 'AmazonEmber_Rg';
+	    padding: 4px 4px 5px 7px;
+	    min-height: inherit;
+	}
+	.book_dates p {
+	    margin-right: 0;
+	}
+	.book_dates {
+	    justify-content: space-between;
+	    flex-wrap: wrap;
+	}
+	.booking_details_time {
+		flex-direction: column;
+		padding: 23px 0 15px 27px;
+		background: url(../img/icons/angle-arrow.svg);
+	    background-repeat: no-repeat;
+	    background-size: 23px;
+	    background-position-y: 25px;
+	}
+	.booking_details_second {
+	    padding: 0;
+	    text-align: right;
+	}
+	.booking_details_second p:after{
+		content: none;
+	}
+	.booking_details_second p:before {
+	    right: 25%;
+	    left: auto;
+	    width: 20%;
+	}
+	.change_branding_point {
+	    flex-direction: column;
+	}
+	.change_branding_point h3 {
+	    font-family: 'Amazon-Ember-Medium';
+	    margin-bottom: 10px;
+	    color: #0484C0;
+	}
+	.select_branding {
+	    width: 100%;
+	}
+	.select_branding select {
+	    border-radius: 3px;
+	    padding: 6px 20px;
+	    font-size: 14px;
+	    line-height: 18px;
+	}
+	.booking_details_box_border:before, .booking_details_box_border:after {
+	    height: 24px;
+	    top: 86px;
+	    background: #e01a2b;
+	}
+	.booking_details_time .round-dashed-left, .booking_details_time .round-dashed-right {
+	    height: 24px;
+	    width: 24px;
+	    left: -32px;
+	    top: -12px;
+	    background: #e01a2b;
+	}
+	.booking_details_time .round-dashed-right {
+	    right: -32px;
+	    left: auto;
+	}
+	.passengar_require.prerror {
+	    text-align: left !important;
+	}
+	.gender_area, .namebox {
+	    margin: 15px 0;
+	}
+	.add_passengar_ticket_box  .col-md-4 {
+	    order: 2;
+	}
+	.common_input_box, .berth_prefer select.form-select, .nationality select.form-select {
+	    border: 1px solid #707070;
+	    padding: 6px 20px;
+	    border-radius: 3px;
+	    margin-bottom: 15px;
+	}
+	.common_input_box input::placeholder, .add_passengar_ticket_box select{
+	    font-family: 'Amazon-Ember-Medium';
+	    font-size: 14px;
+	    line-height: 18px;
+	}
+	.has_label {
+	    margin-top: 15px;
+	}
+	.passenger_ticket_btn {
+	    flex-wrap: wrap;
+	}
+	.save_btn {
+	    flex-basis: 48%;
+	    margin: 0 0 15px 0;
+	}
+	.saveadd_btn.save_btn {
+	    margin: 0 0 0 12px;
+	}
+	.save_btn button {
+	    font-size: 14px;
+	    line-height: 18px;
+	    padding: 6px 0;
+	    width: 100%;
+	}
+	.enable_switch {
+	    margin-bottom: 6px;
+	}
+	.pass_ready_text {
+	    margin: 17px 0;
+	}
+	.pass_ready_text h3 {
+	    font-size: 14px;
+	    line-height: 18px;
+	    margin-left: 11px;
+	}
+	.pass_ready_text h3 span {
+	    margin-top: 3px;
+	}
+	.verifybtn button {
+	    font-size: 14px;
+	    line-height: 18px;
+	    padding: 6px 21px;
+	    border-radius: 3px;
+	}
+	.verifyin {
+	    padding: 3px 10px;
+	}
+	.irtc_ac_area {
+	    margin: 15px 0;
+	    flex-direction: column;
+	}
+
+	.irtc_ac_area h3, .irtc_ac_area a {
+	    font-size: 12px;
+	    line-height: 15px;
+	}
+	.tax_benefits_box {
+	    padding: 10px 20px 6px;
+	}
+	.booking_details_right_side{
+		margin: 0;
+	}
+	.additional_preference_box {
+	    padding: 6px 20px;
+	    margin-bottom: 30px;
+	}
+
+	.additional_preference_box select, .cancellation_first label p, .cancellation_second label p, .free_summery_ticke h3 {
+	    font-size: 14px;
+	    line-height: 18px;
+	}
+	.cancel_person p, .cancel_person a{
+		font-size: 14px;
+		line-height: 20px;
+	}
+	.free_cancellation_box p.onlyticket{
+		font-size: 12px;
+		line-height: 20px;
+	}
+	.free_summery_total{
+		margin-top: 15px;
+	}
+	.free_summery_ticke{
+		margin-bottom: 30px;
+	}
+	.free_summery_btn a {
+	    font-size: 18px;
+	    line-height: 22px;
+	    padding: 4px 0;
+	}
+
+	/*booking details*/
+	.red_bg.booking_d {
+	    height: 353px;
+	}
+	section.train_booking_details_area {
+	    position: relative;
+	    overflow-x: hidden;
+	}
+	.train_booking_details_left_space {
+		background: #fff;
+	    position: absolute;
+	    z-index: 999;
+	    max-width: 259px;
+	    padding: 15px;
+	    top: 0;
+	    right: -270px;
+	    overflow-y: scroll;
+	    transition: 0.3s;
+	}
+	.train_booking_details_left_space.active{
+		right: 0;
+	}
+	.quick_filter_check_item.mrl.filter_all_day{
+		margin-bottom: 0;
+	}
+	.filter_by_station {
+		margin-top: 20px;
+	}
+	.train_booking_details_right_space h2{
+		display: none;
+	}
+	.single_filter_train_ticket_box {
+	    background: #fff;
+	    border: 1px solid #707070;
+	    border-top-left-radius: 3px;
+	    border-top-right-radius: 3px;
+	    margin-bottom: 30px;
+	    padding: 15px;
+	}
+	.filter_triger p {
+	    font-size: 14px;
+	    line-height: 18px;
+	    color: #033333;
+	    font-family: 'Amazon-Ember-Medium';
+	}
+
+	.filter_triger p img {
+	    margin-right: 10px;
+	    padding: 5px;
+	}
+	.choice_badge {
+	    right: 20px;
+	    left: auto;
+	    background: none;
+	    padding: 10px 0;
+	}
+	.choice_badge p {
+	    font-size: 10px;
+	    line-height: 13px;
+	}
+	.filter_triger {
+	    position: absolute;
+	    top: 0;
+	    left: auto;
+	    padding: 10px 0;
+	}
+	.top_choice_badge_filter_area {
+	    border-bottom: 1px solid #707070;
+	    padding-bottom: 22px;
+	}
+	.prova_top_area {
+	    flex-wrap: wrap;
+	    position: relative;
+	}
+
+	.prova_titl {
+	    flex-basis: 70%;
+	}
+	.train_shedule a {
+		font-size: 10px;
+		line-height: 13px;
+		text-decoration-line: underline !important;
+	}
+	.prova_days {
+	    flex-basis: 100%;
+	    margin-top: 15px;
+	}
+	.prova_titl h3 {
+	    font-size: 16px;
+	    line-height: 20px;
+	}
+	.train_shedule {
+	    position: absolute;
+	    top: -6px;
+	    right: 0;
+	}
+	.only_time p:before,.only_time p:after{
+		content: none;
+	}
+	.time_with_day p span, .time_with_area p span {
+	    font-size: 16px;
+	    line-height: 20px;
+	    display: block;
+	}
+
+	.time_with_day p, .time_with_area p {
+	    font-size: 8px;
+	    line-height: 10px;
+	}
+	.train_ticket_book_now_items .col-xs-6 {
+	    width: 50%;
+	    margin-bottom: 15px;
+	}
+	.book_now_text {
+	    padding: 6px 10px 10px;
+	}
+	.book_now_text p {
+	    font-size: 12px;
+	    padding: 7px 0;
+	}
+
+	.book_now_text h4 {
+	    padding-bottom: 6px;
+	}
+	.others_date_btn a {
+	    font-size: 14px;
+	    line-height: 18px;
+	}
+
+	.others_date_btn {
+	    margin: 15px 0;
+	    text-align: center;
+	}
+
+	/*footer*/
+	.desktop_show{
+		display: none;
+	}
+	.footer_menu{
+		display: none;
+	}
+	.footer_top_area {
+	    padding: 20px 0 30px;
+	}
+
+}
+
+
+@media only screen and (max-width: 410px) {
+	.dateSection{
+		width: 44%;
+	}
+	.nextDays {
+	    width: 51%;
+	    margin-left: 0px;
+	    padding: 8px;
+	}
+
+	/*pnr status*/
+	section.check_pnr_status_area {
+	    padding: 20px 0;
+	}
+	.check_pnr_status_area h1 {
+	    font-size: 24px;
+	    margin-bottom: 10px;
+	}
+	.pnr_in {
+	    width: 100%;
+	    background: #fff;
+	    padding: 12px;
+	    border-radius: 5px;
+	}
+	.pnr_status_form {
+	    flex-wrap: wrap;
+	    background: none;
+	}
+	.pnr_sbtn {
+	    width: 100%;
+	    text-align: center;
+	    margin-top: 20px;
+	}
+	.pnr_sbtn button {
+	    font-size: 16px;
+	}
+	.pnr_in input::placeholder {
+	    font-size: 14px;
+	}
+	.pnr_in input {
+	    padding: 0;
+	}
+
+	/*faqs*/
+	.travel_book_faqs_area {
+	    padding: 60px 0;
+	}
+	.travel_book_faq_items .tab {
+	    width: 100%;
+	    margin-bottom: 25px;
+	    display: inherit;
+	}
+	.travel_book_faq_items .tabcontent {
+	    width: 100%;
+	}
+	.travel_book_faq_items .tab button {
+	    font-size: 14px;
+	    padding: 10px 0;
+	    width: 100%;
+	}
+	.saveadd_btn.save_btn{
+		margin: 0 0 0 10px;
+	}
+
+}

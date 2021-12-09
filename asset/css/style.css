@@ -1,0 +1,2219 @@
+/* ----------------------------------------------------------------------------------------
+Author       : Md. Majharul Islam
+Template Name: Web Application
+Version      : 1.0
+ ---------------------------------------------------------------------------------------- */
+
+
+/*------------------------------------------------------------------*
+
+[Table of contents]
+
+01.Reset CSS
+02.Font CSS
+03.General Css 
+04.Common CSS
+
+***-------------------------------------------------------------------*/
+
+
+/* 01. Reset CSS
+=============================================================== */
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, ins, kbd, q, s, samp,
+small, strike, strong, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	background: transparent;
+}
+
+img{
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	background: transparent;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+:focus {
+    outline: 0;
+}
+
+a:focus {
+    outline: 0;
+}
+
+ins {
+    text-decoration: none;
+}
+
+del {
+    text-decoration: line-through;
+}
+
+a {
+    text-decoration: none;
+    -webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    transition: all 1s ease;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+body {
+    background: #fff;
+    overflow-x: hidden;
+}
+/* Reset CSS End
+===============================================================*/
+
+@font-face {
+    font-family: AmazonEmber_Bd;
+    src:url("../fonts/AmazonEmber_Bd.ttf");
+}
+
+@font-face {
+    font-family: AmazonEmber_BdIt;
+    src:url("../fonts/AmazonEmber_BdIt.ttf");
+}
+
+@font-face {
+    font-family: AmazonEmber_He;
+    src:url("../fonts/AmazonEmber_He.ttf");
+}
+
+@font-face {
+    font-family: AmazonEmber_HeIt;
+    src:url("../fonts/AmazonEmber_HeIt.ttf");
+}
+
+@font-face {
+    font-family: AmazonEmber_Lt;
+    src:url("../fonts/AmazonEmber_Lt.ttf");
+}
+
+@font-face {
+    font-family: AmazonEmber_LtIt;
+    src:url("../fonts/AmazonEmber_LtIt.ttf");
+}
+
+@font-face {
+    font-family: AmazonEmber_Rg;
+    src:url("../fonts/AmazonEmber_Rg.ttf");
+}
+
+@font-face {
+    font-family: AmazonEmber_RgIt;
+    src:url("../fonts/AmazonEmber_RgIt.ttf");
+}
+
+@font-face {
+    font-family: AmazonEmber_Th;
+    src:url("../fonts/AmazonEmber_Th.ttf");
+}
+
+@font-face {
+    font-family: AmazonEmber_ThIt;
+    src:url("../fonts/AmazonEmber_ThIt.ttf");
+}
+
+@font-face {
+    font-family: Amazon-Ember-Medium;
+    src:url("../fonts/Amazon-Ember-Medium.ttf");
+}
+
+@font-face {
+    font-family: Amazon-Ember-MediumItalic;
+    src:url("../fonts/Amazon-Ember-MediumItalic.ttf");
+}
+
+
+/* 02. Font CSS Start
+=============================================================== */
+
+
+h1,
+h2,
+h3,
+ul,body {
+    font-family: AmazonEmber_Bd;
+}
+
+
+
+h1 {
+    font-size: 32px;
+    line-height: 40px;
+    color: #033333;
+    text-transform: uppercase;
+}
+
+h2 {
+    font-size: 28px;
+    line-height: 35px;
+    color: #033333;
+}
+
+h3 {
+    font-size: 18px;
+    line-height: 22px;
+    color: #033333;
+}
+
+p{
+    color: #333333;
+    font-family: AmazonEmber_Rg;
+}
+
+/* Font CSS End
+=============================================================== */
+
+
+/* 03. General CSS
+=============================================================== */
+
+html{
+    width: 100%;
+    height: 100%;
+}
+
+a {
+    word-wrap: break-word;
+    text-decoration: none !important;
+}
+
+a:hover,
+a:focus {
+    text-decoration: none;
+    outline: 0;
+}
+
+img {
+    max-width: 100%;
+}
+
+
+
+textarea:hover, 
+select:hover, 
+input:hover, 
+textarea:active,
+select:active,
+input:active, 
+textarea:focus,
+select:focus,
+input:focus,
+button:focus,
+button:active,
+button:hover,
+label:focus,
+.btn:active,
+.btn.active
+{
+    outline:0px !important;
+    -webkit-appearance:none;
+    box-shadow: none !important;
+}
+
+
+/*input label top*/
+.check_input_wrap input:focus + label, .check_input_wrap input:valid + label{
+      font-size: 14px;
+      color: #033333;
+      top: -10px;
+      left:62px;
+      background: #ffffff;
+      padding: 0px 5px 0px 5px;
+}
+.check_input_wrap{
+    position: relative;
+}
+.check_input_wrap label{
+    font-size: 18px;
+    line-height: 22px;
+    font-family: 'AmazonEmber_Rg';
+    color: #033333;
+    padding: 28px 62px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition:0.2s ease all; 
+    -moz-transition:0.2s ease all; 
+    -webkit-transition:0.2s ease all;
+    pointer-events: none;
+}
+/*input label top end*/
+
+/* General Css End
+=============================================================== */
+
+.section_padding{
+    padding: 0 60px;
+}
+
+/* Mobile header css
+=============================================================== */
+.mobile_show, .tablet_show{
+    display: none;
+}
+
+.mobile_header_area{
+    background: #007EB9;
+    padding-top: 24px;
+    padding-bottom: 21px;
+}
+
+.mobile_menu_area{
+    background: #fff;
+    border-radius: 5px;
+    overflow: hidden;
+    margin-top: 15px;
+}
+.mobile_menu ul{
+    overflow-x: scroll;
+    white-space: nowrap;
+}
+.mobile_menu ul li{
+    margin: 10px;
+}
+.mobile_menu ul li a{
+    font-family: Amazon-Ember-Medium;
+    font-size: 12px;
+    line-height: 15px;
+    color: #333333;
+}
+.mobile_menu a.mobile_search_btn {
+    background: #007EB9;
+    color: #fff;
+    border-radius: 13px;
+    padding: 4px 11px 6px 12px;
+}
+
+/*off canvas menu*/
+.off_canvas_menu_area{
+    position: fixed;
+    background:#007eb9 none repeat scroll 0 0;
+    width:300px;
+    height: 100%;
+    z-index: 999;
+    padding:30px;
+    transition: 0.3s;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16);
+    margin-top: 70px;
+    margin-left: -340px;
+}
+.off_canvas_menu_area.active{
+    margin-left: -40px;
+}
+.off_canvas_close{
+    position: absolute;
+    top:0;
+    right: 0;
+    padding:20px;
+    color:#fff;
+    font-size: 20px;
+    cursor: pointer;
+}
+.off_canvas_menu_area ul{
+    padding-top: 25px;
+}
+.off_canvas_menu_area ul li a{
+    font-family: 'Amazon-Ember-Medium';
+    color:#fff;
+    display: block;
+    padding:10px 16px;
+    border-bottom: 1px solid #fff;
+    transition: 0.5s;
+}
+.off_canvas_menu_area ul li:hover a{
+    color:#033333;
+}
+.off_canvas_overlay{
+    position: fixed;
+    background: #000;
+    width: 100%;
+    height: 100%;
+    z-index:-1;
+    opacity: 0;
+    transition: 0.3s;
+    margin-top: 70px;
+}
+
+.off_canvas_overlay.active{
+    opacity: 0.5;
+    z-index: 98;
+}
+/*End off canvas menu*/
+
+/* Home page css
+=============================================================== */
+
+/*heaer area*/
+section#header-top {
+    background: #007EB9;
+    padding: 8px 0;
+}
+
+section#header-top ul li a {
+    color: #fff;
+    font-size: 14px;
+    line-height: 18px;
+    font-family: 'AmazonEmber_Rg';
+}
+
+section#header-top ul li a img {
+    margin-right: 8px;
+}
+
+section#header-top .dropdown-toggle::after {
+    margin-left: 8px;
+}
+section#header-top a.dropdown-item{
+    color: #033333;
+    transition: 0.3s;
+}
+section#header-top a.dropdown-item:hover{
+    background: #007eb9;
+    color: #fff;
+}
+
+section#header-top button {
+    color: #007EB9;
+    background: #fff;
+    border-radius: 3px;
+    padding: 3px 15px 4px;
+    font-size: 14px;
+    line-height: 18px;
+    font-family: 'AmazonEmber_Rg';
+}
+
+#middle_header{
+    padding-top: 12px;
+    padding-bottom: 18px;
+}
+
+.logo a img {
+    width: 210px;
+}
+
+.bottom_header_area {
+    box-shadow: 0 3px 3px rgba(0,0,0,0.16);
+    padding-bottom: 18px;
+}
+nav.navbar_area ul li a {
+    display: block;
+    font-size: 18px;
+    line-height: 22px;
+    color: #007EB9;
+    transition: 0.5s;
+}
+nav.navbar_area ul li:hover a{
+    color: #033333;
+}
+
+/*Search*/
+section#book_your_ticket_area {
+    background: #E01A2B;
+    margin: 33px 0 30px;
+}
+.TrainSearch {
+    border-radius: 8px;
+    background: #fff;
+    box-shadow: 0 2px 5px 2px rgb(0 0 0 / 10%);
+    margin-top: 5px;    
+    display: inline-flex;
+    justify-content: start;
+    width: 100%;
+    padding: 5px 0px;
+}
+.fromStation,.toStation, .CalenderBlock{
+    width: 28%;
+    position: relative;
+    padding-bottom: 15px;
+}
+.buttonBlock{
+    width: 16%;
+    margin-top: 15px;
+    margin-right: 10px;
+}
+.fromStation,.toStation{
+    padding: 35px 0px 10px 25px;
+}
+.fromStation{
+    border-right: 1px solid #D2D2D2;
+}
+.user-input-wrp {
+    position: relative;
+    width: 100%;
+}
+.user-input-wrp input {
+    width: 95%;
+    font-size: 18px;
+    line-height: 22px;
+    border: 0px;
+    font-family: Amazon-Ember-Medium;
+}
+.user-input-wrp label {
+    display: block!important;
+    position: absolute;
+    left: 0px;
+    top: 5px;
+    font-size: 14px;
+    font-weight: 400;
+    color: #A8A8A8;
+    transition: transform 200ms ease;
+    pointer-events: none;
+    text-transform: uppercase;
+    line-height: 18px;
+}
+input:focus + label, input + label.filled{
+    top: -18px;
+}
+.interchange-name {
+    cursor: pointer;
+    position: absolute;
+    top: 33px;
+    left: -13px;
+    z-index: 2;
+}
+.dateSection {
+    float: left;
+    width: 38%;
+    padding-top: 11px;
+    position: relative;
+}
+.nextDays {
+    display: inline-flex;
+    width: 62%;
+    padding-top: 20px;
+    padding-left: 15px;
+    align-items: center;
+}
+#datepicker {
+    z-index: 999;
+}
+.setDate.calendar {
+    position: absolute;
+    top: 30px;
+    left: 0px;
+    opacity: 0;
+    height: 35px;
+}
+.dateSection input {
+    width: 100%;
+    border: 0px;
+    cursor: pointer;
+}
+.next-date {
+    display: inline-block;
+    width: 60px;
+    margin-right: 6px;
+    font-family: 'Roboto'!important;
+    color: #4B4B4B;
+    text-align: center;
+    font-weight: 400;
+    border: 1px solid #A8A8A8;
+    border-radius: 5px;
+    cursor: pointer;
+    padding: 5px;
+}
+.active-date {
+    background: #2d95f1!important;
+    color: #fff!important;
+}
+.next-date.active-date p{
+    color: #fff;
+}
+.SearchTrain-btn {
+    float: right;
+    display: inline-block;
+    padding: 12px 25px;
+    font-size: 18px;
+    font-weight: 500;
+    color: #fff;
+    background: #1079D7;
+    border: 0px;
+    outline: 0px;
+    border-radius: 8px;
+}
+
+p.Next_DY_1, p.Next_DY_2, p.Next_DY_3 {
+    font-size: 9px;
+    line-height: 12px;
+    font-family: AmazonEmber_Lt;
+    color: #A8A8A8;
+}
+
+p.Next_WD_1, p.Next_WD_2, p.Next_WD_3 {
+    font-size: 14px;
+    line-height: 18px;
+    font-family: 'Amazon-Ember-Medium';
+    text-transform: uppercase;
+    color: #A8A8A8;
+}
+
+section#book_your_ticket_area h2 {
+    color: #fff;
+    padding: 30px 0 25px;
+    text-transform: uppercase;
+}
+section#book_your_ticket_area h3 {
+    font-size: 22px;
+    line-height: 27px;
+    font-family: 'AmazonEmber_Rg';
+    color: #fff;
+    padding: 30px 0 27px;
+}
+
+#SearchTrainbtn img, section#book_your_ticket_area h3 img {
+    width: 18px;
+    margin-right: 8px;
+}
+p.doj-text {
+    font-size: 14px;
+    line-height: 18px;
+    font-family: 'Amazon-Ember-Medium';
+    color: #A8A8A8;
+    text-transform: uppercase;
+}
+
+p.doj-text img {
+    margin-left: 10px;
+}
+input#datepicker {
+    font-size: 18px;
+}
+
+div#newCal span {
+    font-size: 18px;
+    line-height: 22px;
+    font-family: 'Amazon-Ember-Medium';
+    text-transform: uppercase;
+}
+
+div#newCal {
+    margin-top: 10px;
+}
+
+/*exclusive offer*/
+section#exclusive_offer_area {
+    box-shadow: 0 -3px 3px rgba(0,0,0,0.16);
+    margin-bottom: 85px;
+}
+section#exclusive_offer_area h2 {
+    color: #033333;
+    padding: 30px 0;
+}
+
+div#exclusive_offer_items {
+    position: relative;
+}
+
+.exclusive-custom-arrow.slick-custom-arrow-left.slick-arrow i, .exclusive-custom-arrow.slick-custom-arrow-right.slick-arrow i {
+    color: #007EB9;
+    position: absolute;
+    top: -50px;
+    right: 50px;
+    box-shadow: inset 0 3px 6px rgba(0,0,0,0.07);
+    font-size: 18px;
+    padding: 6px 15px;
+    cursor: pointer;
+}
+.exclusive-custom-arrow.slick-custom-arrow-left.slick-arrow i{
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+.exclusive-custom-arrow.slick-custom-arrow-right.slick-arrow i{
+    right: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+.single_ex_offter{
+    border: 1px dashed #033333;
+    background: #F8F8F8;
+    overflow: hidden;
+    padding: 37px 20px 27px;
+    position: relative;
+    border-radius: 5px;
+}
+.single_ex_offter:before, .single_ex_offter:after {
+    display: block;
+    clear: both;
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: -64px;
+    background: #fff;
+    width: 84px;
+    height: 84px;
+    border-radius: 50%;
+    margin-top: -42px;
+    border: 1px dashed #033333;
+    z-index: 999;
+}
+.single_ex_offter:after{
+    right:-64px;
+    left: auto;
+}
+.single_offer_border {
+    position: relative;
+    margin:0 15px;
+}
+
+.single_offer_border:before, .single_offer_border:after  {
+    display: block;
+    clear: both;
+    content: "";
+    background: white;
+    width: 1px;
+    height: 68px;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    z-index: 99;
+    margin-top: -34px;
+}
+.single_offer_border:after {
+    right: 0;
+    left: auto;
+}
+.ex_offer_img {
+    border-radius: 5px;
+    overflow: hidden;
+}
+.ex_offer_img img {
+    width: 109px;
+    border-radius: 5px;
+}
+
+.ex_offer_item h2 {
+    padding: 0 !important;
+    margin: 10px 0 5px;
+}
+.ex_offer_item a {
+    font-size: 14px;
+    line-height: 18px;
+    font-family: 'AmazonEmber_Rg';
+    background: #007EB9;
+    padding: 4px 20px 3px;
+    border-radius: 5px;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.ex_offer_item p {
+    font-size: 12px;
+    line-height: 15px;
+    font-family: 'AmazonEmber_Rg';
+    color: #033333;
+    margin-top: 10px;
+}
+.single_ex_offter span {
+    height: 80px;
+    border-right: 1px dashed #000;
+    margin: 0 30px;
+    position: relative;
+}
+
+.single_ex_offter span:after {
+    position: absolute;
+    bottom: -35px;
+    left: -11px;
+    content: url(../img/icons/cutter.svg);
+}
+
+/*why choose*/
+.single_why_choose {
+    background: #007EB9;
+    border-radius: 5px;
+    box-shadow: 0 0 3px rgba(0,0,0,0.16);
+    padding: 35px 40px;
+    min-height: 230px;
+    margin-bottom: 30px;
+}
+.status_img h3 {
+    color: #fff;
+}
+section#why_choose_area h2 {
+    text-transform: uppercase;
+    margin-bottom: 60px;
+}
+
+.status_img h3 img {
+    margin-right: 6px;
+}
+
+.single_why_choose p {
+    font-size: 16px;
+    line-height: 30px;
+    font-family: 'AmazonEmber_Rg';
+    color: #fff;
+}
+
+/*top train routes*/
+section.top_train_routes_area {
+    margin-top: 70px;
+}
+section.top_train_routes_area h2 {
+    text-transform: uppercase;
+    margin-bottom: 40px;
+}
+.single_routes_search p, .single_routes_search a {
+    font-size: 18px;
+    line-height: 22px;
+    font-family: 'Amazon-Ember-Medium';
+}
+.single_routes_search p img {
+    margin-right: 14px;
+}
+.single_routes_search a{
+    color: #007EB9;
+    text-decoration-line: underline !important;
+}
+.single_routes_search {
+    border-bottom: 1px dashed #033333;
+    padding: 19px 0 15px;
+}
+
+section.irctc_train_booking_area {
+    margin: 100px 0;
+}
+
+section.irctc_train_booking_area h2 {
+    text-transform: uppercase;
+    margin: 100px 0 30px;
+}
+.irctc_train_booking_area p, .single_faq p, .footer_bootom p {
+    color: #033333;
+}
+
+section.irctc_train_booking_area p {
+    font-size: 16px;
+    line-height: 35px;
+    font-family: 'AmazonEmber_Rg';
+    margin-bottom: 100px;
+    text-align: justify;
+}
+
+/*faq*/
+.faq_items h2 {
+    margin-bottom: 15px;
+}
+.single_faq p.faq_title {
+    font-size: 16px;
+    line-height: 35px;
+    margin: 10px 0 12px;
+    font-family: 'AmazonEmber_Bd';
+}
+
+.single_faq p {
+    font-size: 16px;
+    line-height: 30px;
+    font-family: 'AmazonEmber_Rg';
+    margin: 0 0 10px;
+}
+
+/*footer*/
+.footer_top_area{
+    background: #F8F8F8;
+    padding: 60px 0 100px;
+}
+.footer_logo a img {
+    width: 209px;
+}
+.footer_menu ul li a {
+    line-height: 35px;
+    font-family: 'AmazonEmber_Rg';
+    color: #033333;
+}
+.footer_social_icon {
+    margin-top: 20px;
+}
+.footer_social_icon ul li {
+    margin-right: 10px;
+}
+.footer_bootom {
+    padding: 10px 0 12px;
+}
+.footer_bootom p {
+    line-height: 25px;
+    font-family: 'AmazonEmber_Rg';
+}
+
+
+
+/* Contact page css
+=============================================================== */
+
+section.contact_form_area {
+    margin: 80px 0 100px;
+}
+#inputmr{
+    margin-bottom: 30px;
+}
+
+.contact_form_area .check_input_wrap input {
+    padding: 25px 25px 24px 60px;
+}
+
+.contact_form_area .check_input_wrap span img {
+    position: absolute;
+    top: 50%;
+    margin-top: -8px;
+    left: 30px;
+}
+
+.contact_form_area .contact_form textarea{
+    font-size: 18px;
+    line-height: 22px;
+    font-family: 'AmazonEmber_Rg';
+    color: #033333;
+    padding-left: 62px;
+    padding-top: 12px;
+}
+
+.contact_form_area .check_input_wrap.sms span img{
+    top: 12%;
+}
+
+.contact_form_area p {
+    font-size: 18px;
+    line-height: 22px;
+    font-family: 'AmazonEmber_Rg';
+}
+
+.contact_form_area p a {
+    color: #007EB9;
+}
+
+.contact_form_area .submit_btn button {
+    border: none;
+    background: #007EB9;
+    border-radius: 5px;
+    color: #fff;
+    padding: 20px 90px;
+}
+
+.contact_form_area .submit_btn button img {
+    margin-right: 15px;
+}
+
+.contact_form_area .submit_btn {
+    margin: 10px 0 50px;
+}
+.contact_note h4 {
+    font-size: 18px;
+    line-height: 22px;
+    font-family: 'Amazon-Ember-Medium';
+    color: #707070;
+    margin-top: 12px;
+}
+
+.note_text {
+    margin-left: 72px;
+}
+
+.note_text p {
+    margin-bottom: 18px;
+    color: #707070;
+    line-height: 25px;
+}
+
+.note_text p img {
+    margin-right: 10px;
+}
+
+.contact_title p {
+    margin: 15px 0 40px;
+}
+.contact_title p img {
+    margin-right: 10px;
+}
+
+/* PNR page css
+=============================================================== */
+.check_pnr_status_area {
+    background: #EC4115;
+    padding: 60px 0;
+}
+
+.check_pnr_status_area h1 {
+    color: #fff;
+    margin-bottom: 30px;
+}
+.pnr_status_form {
+    background: #fff;
+    border-radius: 5px;
+}
+
+.pnr_in {
+    width: 80%;
+}
+
+.pnr_in input {
+    border: none;
+    padding-left: 20px;
+    width: 100%;
+}
+.pnr_in input::placeholder{
+    font-size: 18px;
+    line-height: 22px;
+    color: #B7B7B7;
+}
+
+.pnr_sbtn{
+    width: 20%;
+    text-align: right;
+    margin: 10px;
+}
+.pnr_sbtn button {
+    border: none;
+    font-size: 18px;
+    line-height: 22px;
+    background: #007EB9;
+    border-radius: 5px;
+    color: #fff;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.10);
+    padding: 14px 22px;
+}
+
+section.pnr_status_details_area {
+    margin: 60px 0 100px;
+}
+.pnr_details_text_first h3 {
+    color: #007EB9;
+}
+.pnr_details_text_first p{
+    margin: 16px 0 0;
+}
+.pnr_info {
+    margin-left: 30px;
+}
+
+.pnr_sub_info {
+    margin-left: 50px;
+}
+.pnr_info p, .pnr_details_text_first p{
+    line-height: 20px;
+    color: #333333;
+    font-family: 'AmazonEmber_Rg';
+    margin-bottom: 20px;
+}
+.pnr_sub_info p {
+    line-height: 35px;
+    margin: 0;
+}
+.pnr_info p img {
+    margin-right: 24px;
+}
+
+.pnr_details_text_faqs h3 {
+    color: #333333;
+    margin-top: 30px;
+}
+.pnr_details_text_faqs h2#headingOne button {
+    line-height: 20px;
+    color: #333333;
+    padding: 15px 15px 15px 30px;
+    font-size: 16px;
+}
+
+.pnr_details_text_faqs div#accordionExample {
+    margin-left: 25px;
+}
+
+.pnr_details_text_faqs .accordion-body p {
+    line-height: 30px;
+    font-family: 'AmazonEmber_Rg';
+    color: #333333;
+}
+
+/*faqs accordion before (+,-)*/
+.accordion-item, .accordion-button:not(.collapsed){
+    border: none;
+    background: none;
+    box-shadow: none;
+    rotate: none;
+    transform: none;
+}
+
+.accordion-button:not(.collapsed)::after,.accordion-button::after{
+    background-image: none;
+    content: none;
+}
+.accordion-button::before{
+    content: url(../img/icons/plus.svg);
+    position: absolute;
+    left: 0;
+    top: 50%;
+    margin-top: -9px;
+}
+.accordion-item [aria-expanded="true"]::before{
+    content: "";
+    margin-top: 0px;
+    width: 14px;
+    height: 1px;
+    background: #333333;
+}
+.accordion-body {
+    padding: 15px 30px;
+}
+
+/* Faqs page css
+=============================================================== */
+.travel_book_faqs_area {
+    padding: 100px 0px;
+}
+/* Style the tab */
+.travel_book_faq_items .tab {
+  float: left;
+  width: 30%;
+  padding-right: 85px;
+}
+.travel_book_faq_items {
+    padding-top: 15px;
+}
+/* Style the buttons inside the tab */
+.travel_book_faq_items .tab button{
+  display: block;
+  background-color: inherit;
+  color: black;
+  padding: 17px 0;
+  width: 100%;
+  border: none;
+  outline: none;
+  text-align: left;
+  cursor: pointer;
+  transition: 0.3s;
+  font-size: 18px;
+  border-bottom: 0.25px solid #AEAEAE;
+}
+
+/* Create an active/current "tab button" class */
+.travel_book_faq_items .tab button.activatetab{
+  color: #007EB9;
+}
+
+/* Style the tab content */
+.travel_book_faq_items .tabcontent {
+  float: left;
+  padding: 0px 12px;
+  width: 70%;
+  border-left: none;
+  display: none;
+}
+.travel_book_faq_items .tabcontent.opentab{
+    display: block;
+}
+.travel_book_faq_items .accordion-item [aria-expanded="true"],
+.travel_book_faq_items .accordion-button,
+.travel_book_faq_items .accordion-button:not(.collapsed){
+    color: #007EB9;
+}
+.travel_book_faq_items button.accordion-button{
+    line-height: 22px;
+    font-size: 18px;
+    padding: 15px 15px 15px 30px;
+}
+
+
+/* Privacy policy page css
+=============================================================== */
+section.privacy_policy_area {
+    margin: 100px 0;
+}
+section.privacy_policy_area h2 {
+    color: #272525;
+    margin-bottom: 34px;
+}
+.privacy_policy_left_side {
+    margin-right: 40px;
+    position: sticky;
+    top: 0;
+}
+
+.privacy_policy_right_side {
+    margin-left: 40px;
+}
+.privacy_policy_left_side ul li {
+    padding: 10px 0;
+    border-bottom: 1px solid #AEAEAE;
+}
+.privacy_policy_left_side ul li a {
+    line-height: 20px;color: #3E3E3E;
+}
+.single_policy_details p {
+    line-height: 30px;color: #272525;
+}
+
+.single_policy_details h3 {
+    color: #272525;
+    margin: 30px 0;
+}
+
+
+/* Sign in page css + create page + reset password
+=============================================================== */
+
+section.sign_wrapper_area {
+    width: 580px;
+    margin: 0 auto;
+    background: #fff;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.10);
+    border-radius: 5px;
+    padding: 20px 27px 45px;
+}
+
+.signup_box .close_btn {
+    text-align: right;
+}
+.signup_box h1 {
+    color: #333333;
+    margin: 6px 0 20px;
+}
+.sign_wrapper_area span.lock img {
+    position: absolute;
+    top: 50%;
+    margin-top: -8px;
+    right: 25px;
+    left: inherit;
+}
+
+.forgot_pass {
+    text-align: right;
+    margin-top: 6px;
+}
+.forgot_pass a {
+    font-size: 14px;
+    line-height: 18px;
+    color: #333333;
+    font-family: 'AmazonEmber_Rg';
+    text-decoration-line: underline !important;
+}
+.signin_check{
+    margin-top: 6px;
+}
+.signbtn {
+    margin: 44px 0 50px;
+}
+.signbtn input {
+    display: block;
+    width: 100%;
+    border: none;
+    background: #007EB9;
+    border-radius: 5px;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 28px;
+    line-height: 30px;
+    padding: 20px 0;
+}
+
+.signin_new h2 {
+    font-size: 24px;
+    line-height: 30px;
+    color: #333333;
+    margin-bottom: 6px;
+}
+
+.signin_new a {
+    font-size: 18px !important;
+    line-height: 22px;
+    font-family: 'AmazonEmber_Rg';
+    color: #333333;
+}
+
+.crac {
+    margin-top: 24px;
+}
+
+.crac a {
+    font-size: 24px !important;
+    line-height: 30px;
+    font-family: 'AmazonEmber_Bd';
+    color: #007EB9;
+    text-decoration-line: underline !important;
+}
+.back_login a {
+    font-size: 14px;
+    line-height: 18px;
+    font-family: 'AmazonEmber_Rg';
+    color: #333333;
+    text-decoration-line: underline !important;
+}
+
+.signin_check.create_check label {
+    font-size: 12px;
+    line-height: 25px;
+    font-family: 'AmazonEmber_Rg';
+}
+.reset_pass_text {
+    padding: 5px 50px 25px;
+}
+.reset_pass_text p {
+    font-size: 14px;
+    line-height: 25px;
+    font-family: 'AmazonEmber_Rg';
+    color: #333333;
+}
+
+h1.reset_pass_title {
+    margin: 0;
+    margin-top: 6px;
+}
+.signbtn.reset_btn {
+    margin: 0px 0 30px;
+}
+
+.signbtn.create_btn{
+    margin: 25px 0 29px;
+}
+
+/*this code for custom checkbox*/
+.signin_check label {
+    position: relative;
+    cursor: pointer;
+    font-size: 16px;
+    line-height: 20px;
+    color: #333333;
+    font-family: Amazon-Ember-Medium;
+}
+.signin_check input {
+  padding: 0;
+  height: initial;
+  width: initial;
+  margin-bottom: 0;
+  display: none;
+  cursor: pointer;
+}
+
+.signin_check label:before {
+  content:'';
+  -webkit-appearance: none;
+  background-color: transparent;
+  border: 2px solid #707070;
+  box-shadow: inset 0 2px 3px rgba(0,0,0,0.16);
+  display: inline-block;
+  position: relative;
+  vertical-align: middle;
+  cursor: pointer;
+  margin-right: 10px;
+  width: 17px;
+  height: 17px;
+  border-radius: 2px;
+}
+
+.signin_check input:checked + label:after {
+  content: url(../img/icons/check.svg);
+  display: block;
+  position: absolute;
+  top: 2px;
+  left: 4px;
+  transform: rotate(10deg);
+}
+/*end custom checkbox*/
+
+
+/*custom radio input*/
+.remember_radio input[type="radio"] {
+    position: relative;
+    width: 17px;
+    height: 17px;
+    border-radius: 50%;
+    border: 1px solid #707070;
+    color: #b93e3e;
+    background-color: transparent;
+    box-shadow: inset 0px 2px 3px rgba(0,0,0,0.16);
+}
+.remember_radio input[type="radio"] {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+.remember_radio input[type="radio"]:checked::before {
+    content: " ";
+    position: absolute;
+    width: 11px;
+    height: 11px;
+    border-radius: 50%;
+    border: none;
+    background-color: #707070;
+    box-shadow: 0px 2px 3px rgb(0 0 0 / 0%);
+    left: 2px;
+    top: 2px;
+}
+/*end custom radio*/
+
+
+/* Booking page css
+=============================================================== */
+.red_bg {
+    background: #E01A2B;
+    width: 100%;
+    height: 148px;
+}
+.red_bg {
+    background: #E01A2B;
+    width: 100%;
+    height: 148px;
+}
+section.booking_details_form_area {
+    margin-bottom: 80px;
+}
+.booking_details_form_area h2 {
+    font-size: 24px;
+    line-height: 30px;
+    color: #007EB9;
+    padding: 14px 0 13px;
+}
+
+.booking_deatils_left_side_area, .booking_details_right_side {
+    margin-top: -88px;
+}
+.booking_deatils_left_side h2 {
+    background: #fff;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+.booking_details_box {
+    background: #F8F8F8;
+    border: 1px dashed #033333;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    padding: 0 50px;
+    position: relative;
+    overflow: hidden;
+}
+.book_dates p {
+    font-size: 14px;
+    line-height: 18px;
+    font-family: 'AmazonEmber_Rg';
+    color: #033333;
+    margin-right: 86px;
+    margin-top: 10px;
+}
+.booking_details_title h3.setavailable {
+    position: absolute;
+    background: #007EB9;
+    top: 30px;
+    right: 0;
+    color: #fff;
+    padding: 9px 24px;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    margin-top: -10px;
+}
+.booking_details_title h3 {
+    padding: 30px 0;
+}
+.booking_details_time{
+    position: relative;
+    padding: 30px 0;
+}
+.booking_details_time:before{
+    content: "";
+    height: 1px;
+    border-bottom: .25px dashed #033333;
+    left: -20px;
+    right: -20px;
+    top: 0px;
+    position: absolute;
+}
+.booking_details_time .round-dashed-left, .booking_details_time .round-dashed-right{
+    content: "";
+    height: 51px;
+    width: 51px;
+    border: .1px dashed #033333;
+    left: -70px;
+    top: -24px;
+    position: absolute;
+    border-radius: 50%;
+    background: #fff;
+}
+.booking_details_box_border {
+    position: relative;
+}
+.booking_details_box_border:before,.booking_details_box_border:after{
+    content: "";
+    height:49px;
+    width: 1px;
+    position: absolute;
+    background: #ffffff;
+    top: 88px;
+    left: 0;
+    z-index: 9;
+}
+.booking_details_box_border:after{
+    left: auto;
+    right: 0;
+}
+.booking_details_time .round-dashed-right{
+    right: -70px;
+    left: auto;
+}
+.booking_details_second {
+    flex-basis: 50%;
+    text-align: center;
+    padding: 0 30px;
+}
+
+.booking_details_first {
+    flex-basis: 25%;
+}
+
+.booking_details_third {
+    flex-basis: 25%;
+}
+
+.booking_details_second p {
+    position: relative;
+    font-size: 14px;
+    line-height: 18px;
+}
+
+.booking_details_second p:before, .booking_details_second p:after {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    content: "";
+    width: 35%;
+    height: 1px;
+    background: #033333;
+}
+.booking_details_second p:after {
+    right: 0;
+    left: auto;
+}
+.change_branding_point h3 {
+    font-family: Amazon-Ember-Medium;
+    flex-basis: 28%;
+}
+.select_branding {
+    flex-basis: 72%;
+}
+.select_branding select {
+    border-radius: 50px;
+    padding: 9px 30px 8px;
+    color: #033333;
+    font-family: 'AmazonEmber_Rg';
+    line-height: 22px;
+}
+.change_branding_point {
+    padding-bottom: 21px;
+}
+h2.common_title_in_box {
+    background: #F8F8F8;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border: 0.25px solid #007EB9;
+    border-bottom: 0;
+}
+.common_details_box{
+    padding: 0 50px;
+    border: 0.25px solid #033333;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+.passengar_require {
+    margin-top: 10px;
+}
+.passengar_require p, p.inlable{
+    font-size: 12px;
+    line-height: 15px;
+    color: #033333;
+    margin-bottom: 6px;
+}
+
+.passengar_require p img, p.inlable img {
+    margin-right: 11px;
+}
+.gender_box {
+    border: 1px solid #707070;
+}
+.male {
+    flex-basis: 50%;
+    text-align: center;
+    padding: 16px;
+}
+.male.active{
+    border-right: 1px solid #707070;
+}
+.male label {
+    line-height: 20px;
+    font-family: 'AmazonEmber_Rg';
+    color: #033333;
+}
+.male.active label{
+    color: #007EB9;
+    font-family: 'AmazonEmber_Bd';
+}
+.male input {
+    appearance: none;
+    display: block;
+}
+.common_input_box {
+    border: 1px solid #707070;
+    padding: 16px;
+}
+
+.common_input_box input {
+    border: none;
+    width: 100%;
+}
+.add_passengar_ticket_box_area {
+    margin: 30px 0;
+}
+.common_input_box input::placeholder, .add_passengar_ticket_box select{
+    font-family: 'AmazonEmber_Rg';
+    font-size: 16px;
+    line-height: 20px;
+    color: #033333;
+}
+
+.berth_prefer select.form-select, .nationality select.form-select{
+    border: 1px solid #707070;
+    padding: 19px;
+    border-radius: inherit;
+}
+.gender_area, .namebox {
+    margin: 36px 0;
+}
+.has_label{
+    position: relative;
+}
+
+.has_label .inlable{
+    position: absolute;
+    top: -20px;
+}
+
+.save_btn{
+    margin: 38px 0 30px;
+}
+.save_btn button {
+    border: none;
+    background: #007EB9;
+    border-radius: 5px;
+    color: #fff;
+    padding: 12px 32px 11px 33px;
+    font-size: 18px;
+    line-height: 22px;
+}
+.saveadd_btn.save_btn {
+    margin-left: 30px;
+}
+
+.irctc_user_id_-area {
+    margin: 30px 0;
+}
+.destination_details_contact_box p.inlable {
+    margin-top: 10px;
+    margin-bottom: 14px;
+}
+.enable_switch{
+    margin-bottom: 16px;
+}
+.enable_switch a img {
+    margin-right: 6px;
+    margin-top: -6px;
+}
+.enable_switch .form-switch{
+    margin-left: 10px;
+}
+.enable_switch .form-check .form-check-input{
+    float: inherit;
+}
+.pincode, .address  {
+    margin-bottom: 20px;
+}
+.pass_ready_text {
+    margin: 30px 0;
+}
+.pass_ready_text h3 {
+    font-size: 16px;
+    line-height: 20px;
+    margin-left: 20px;
+}
+.pass_ready_text h3 span {
+    font-size: 12px;
+    line-height: 15px;
+    font-family: 'AmazonEmber_Rg';
+    display: block;
+}
+
+.verifyin {
+    width: 100%;
+    padding: 13px;
+}
+.user_id_verify.common_input_box {
+    padding: 0;
+}
+.verifybtn button {
+    font-size: 18px;
+    line-height: 22px;
+    background: #007EB9;
+    color: #fff;
+    border: 1px solid #007EB9;
+    padding: 15px 48px 14px 55px;
+}
+
+.irtc_ac_area{
+    margin-top: 40px;
+    margin-bottom: 30px;
+}
+.irtc_ac_area h3 {
+    font-size: 16px;
+    line-height: 20px;
+}
+.irtc_ac_area a {
+    font-size: 16px;
+    line-height: 20px;
+    color: #007EB9;
+    font-family: 'AmazonEmber_Rg';
+}
+.irtc_ac_create {
+    flex-basis: 48%;
+}
+.irtc_forgot_pass {
+    flex-basis: 52%;
+}
+.tax_benefits_box {
+    background: #F8F8F8;
+    border: 1px solid #007EB9;
+    padding: 18px 50px;
+    border-radius: 5px;
+    margin-bottom: 30px;
+}
+.tax_benefits_box label {
+    margin-left: 13px;
+    margin-top: -6px;
+}
+
+.additional_preference_box select {
+    border: none;
+    font-size: 18px;
+    line-height: 22px;
+    color: #033333;
+}
+
+.additional_preference_box {
+    background: #F8F8F8;
+    border: 1px solid #007EB9;
+    border-radius: 5px;
+    padding: 18px 40px 17px 40px;
+}
+
+.free_cancellation_box {
+    background: #fff;
+}
+.cancellation_first {
+    margin: 30px 0 20px;
+}
+.cancellation_first label p, .cancellation_second label p{
+    font-size: 18px;
+    line-height: 30px;
+    color: #033333;
+    font-family: 'AmazonEmber_Bd';
+    margin-left: 9px;
+    margin-top: -5px;
+}
+.cancel_person {
+    margin-left: 28px;
+}
+.cancel_person p, .cancel_person a {
+    font-size: 18px;
+    line-height: 30px;
+    font-family: 'AmazonEmber_Rg';
+    color: #033333;
+}
+.cancel_person a{
+    color: #007EB9;
+}
+
+.free_cancellation_box p.onlyticket {
+    font-size: 18px;
+    line-height: 30px;
+    font-family: 'AmazonEmber_Rg';
+    margin: 15px 0;
+}
+.passengar_require p span {
+    color: red;
+    margin-right: 3px;
+}
+.free_cancellation_box p.onlyticket span {
+    color: red;
+}
+
+.free_summery_box_area {
+    margin-top: 30px;
+}
+.free_summery_ticke {
+    margin-top: 5px;
+    margin-bottom: 67px;
+}
+.free_summery_total {
+    margin-top: 24px;
+}
+.free_summery_total h2 {
+    font-size: 24px;
+    line-height: 30px;
+    color: #033333;
+}
+
+.free_summery_btn{
+    margin: 25px 0 30px;
+}
+.free_summery_btn a {
+    font-size: 24px;
+    line-height: 30px;
+    color: #fff;
+    display: block;
+    background: #007EB9;
+    border-radius: 5px;
+    padding: 12px 0;
+}
+
+
+/* Booking detail page css
+=============================================================== */
+
+/*left side*/
+section.train_booking_details_area {
+    margin-top: 30px;
+    margin-bottom: 100px;
+}
+
+section.booking_detail_banner_area {
+    margin-top: -125px;
+}
+.booking_detail_banner_area h2{
+    color: #fff;
+    margin-bottom: 15px;
+}
+
+.train_booking_details_left_space {
+    border: 1px solid #D2D2D2;
+    box-shadow: 0 0 10px rgba(0,0,0,0.10);
+    padding: 30px;
+}
+.FilterTitle p {
+    font-size: 18px;
+    line-height: 22px;
+    color: #707070;
+    font-family: 'AmazonEmber_Bd';
+}
+.train_booking_details_left_space .signin_check label:before{
+    border-radius: inherit;
+}
+
+.train_booking_details_left_space .signin_check input:checked + label:after {
+    content: url(../img/icons/check-blue.svg);
+}
+.quick_filter_check_item label, .timer_days_item p {
+    color: #707070;
+    font-size: 16px;
+    line-height: 20px;
+    font-family: 'AmazonEmber_Rg';
+}
+
+.quick_filter_check_item label.active, .timer_days_item p.Time.active{
+    font-family: 'AmazonEmber_Bd';
+}
+.quick_filter_check_item, .timer_days_item {
+    margin-top: 10px;
+    margin-bottom: 28px;
+}
+.mrl{
+    margin-left: 23px;
+}
+
+.timer_days_item .inner-section p img {
+    margin-right: 10px;
+}
+
+.timer_days_item .inner-section p {
+    margin-bottom: 15px;
+}
+
+/*right side*/
+.train_booking_details_right_space h2 {
+    font-size: 24px;
+    line-height: 30px;
+    text-transform: uppercase;
+    margin-bottom: 29px;
+}
+.single_filter_train_ticket_box {
+    border: 1px solid #D2D2D2;
+    padding: 30px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.10);
+    border-radius: 5px;
+    position: relative;
+}
+.prova_titl, .prova_days, .time_with_day, .only_time {
+    flex-basis: 30%;
+}
+
+.train_shedule, .time_with_area {
+    flex-basis: 40%;
+    text-align: right;
+}
+.prova_top_area {
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+.train_shedule a {
+    font-size: 14px;
+    line-height: 18px;
+    color: #007EB9;
+    text-transform: uppercase;
+}
+.prova_days p {
+    font-size: 14px;
+    line-height: 18px;
+    color: #007EB9;
+    text-transform: uppercase;
+    margin-right: 20px;
+}
+
+.prova_days ul li a {
+    font-size: 12px;
+    line-height: 15px;
+    color: #007EB9;
+    display: block;
+    text-decoration-line: underline !important;
+    margin-right: 16px;
+}
+.prova_days ul li.gray_c a {
+    color: #A8A8A8;
+}
+
+.time_with_day p, .time_with_area p {
+    font-size: 18px;
+    line-height: 22px;
+    font-family: 'AmazonEmber_Rg';
+    color: #033333;
+}
+
+.time_with_day p span, .time_with_area p span {
+    font-family: 'AmazonEmber_Bd';
+}
+.only_time p {
+    position: relative;
+    line-height: 20px;
+}
+
+.only_time p:before {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    content: "";
+    width: 35%;
+    height: 1px;
+    background: #707070;
+}
+.only_time p:after {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    content: "";
+    width: 35%;
+    height: 1px;
+    background: #707070;
+}
+.date_by_time_area {
+    padding-bottom: 20px;
+}
+
+.train_ticket_book_now_items {
+    border-top: 1px solid #D2D2D2;
+    padding-top: 30px;
+}
+.single_train_ticket_book_now {
+    border: 1px solid #007EB9;
+    border-radius: 5px;
+    text-align: center;
+}
+.book_now_text {
+    padding: 14px 20px 21px;
+}
+.book_now_text h4 {
+    font-size: 14px;
+    line-height: 18px;
+    color: #033333;
+    text-transform: uppercase;
+    border-bottom: 1px solid #007EB9;
+    padding-bottom: 8px;
+}
+.book_now_text p {
+    font-size: 14px;
+    line-height: 18px;
+    color: #033333;
+    padding: 12px 0 10px;
+}
+.book_now_text p.red {
+    color: #E50019;
+}
+
+.book_now_text p.blue {
+    color: #7AE121;
+}
+.btn_book_now a {
+    font-size: 14px;
+    line-height: 18px;
+    text-transform: uppercase;
+    background: #007EB9;
+    color: #fff;
+    display: block;
+    border-radius: 3px;
+    padding: 11px 0;
+}
+.others_date_btn{
+    margin-top: 40px;
+    margin-bottom: 6px;
+}
+.others_date_btn a {
+    font-size: 16px;
+    line-height: 20px;
+    color: #033333;
+    border: 1px solid #D2D2D2;
+    border-radius: 5px;
+    box-shadow: inset 0 3px 6px rgba(0,0,0,0.16);
+    padding: 8px 20px 7px 22px;
+}
+
+.choice_badge p {
+    font-size: 14px;
+    line-height: 18px;
+    color: #033333;
+    text-transform: uppercase;
+}
+.choice_badge {
+    display: inline-block;
+    background: #DFDFDF;
+    padding: 4px 8px;
+    border-top-left-radius: 5px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.choice_badge p img {
+    margin-right: 6px;
+}
+
+
+/* Booking details view page css
+=============================================================== */
+
+.booking_details_view_area {
+    border-top: 1px solid #D2D2D2;
+    padding-top: 28px;
+}
+.day_of_seat h3 {
+    font-family: 'AmazonEmber_Rg';
+    text-transform: uppercase;
+}
+.day_of_seat_date a {
+    font-size: 14px;
+    line-height: 18px;
+    font-family: 'AmazonEmber_Rg';
+    color: #007EB9;
+}
+.day_of_seat_date a img {
+    margin-right: 7px;
+}
+.btn_price_view {
+    margin: 30px 30px 33px 0;
+}
+.btn_price_view a {
+    font-size: 18px;
+    line-height: 22px;
+    color: #333333;
+    font-family: 'AmazonEmber_Rg';
+    border: 1px solid #707070;
+    box-shadow: inset 0 3px 6px rgba(0,0,0,0.16);
+    border-radius: 5px;
+    padding: 7px 27px 6px;
+}
+.btn_price_view a.active {
+    background: #007EB9;
+    color: #fff;
+    padding: 8px 28px 7px;
+    border: none;
+    position: relative;
+    z-index: 2;
+}
+
+.btn_price_view a.active:after {
+    position: absolute;
+    bottom: -8px;
+    left: 50%;
+    content: "";
+    width: 21px;
+    height: 18px;
+    background: #007EB9;
+    margin-left: -10px;
+    transform: rotate(45deg);
+    z-index: -1;
+}
+
+.seat_detils_single_item {
+    border-bottom: 1px solid #D2D2D2;
+    padding: 20px;
+}
+.seat_detils_single_item:last-child{
+    border: none;
+    padding-bottom: 0;
+}
+.seat_view_date {
+    flex-basis: 40%;
+}
+
+.seat_booking_output {
+    flex-basis: 30%;
+}
+
+.if_seat_have {
+    flex-basis: 30%;
+    text-align: right;
+}
+
+
+.seat_view_date h3 {
+    text-transform: uppercase;
+}
+
+.seat_view_date p {
+    font-size: 14px;
+    line-height: 18px;
+    color: #033333;
+    text-transform: uppercase;
+}
+
+.seat_booking_output h3.light_red {
+    color: #E57957;
+}
+.seat_booking_output h3.light_blue {
+    color: #4BA848;
+}
+
+.if_seat_have a {
+    font-size: 18px;
+    line-height: 22px;
+    background: #007EB9;
+    border: 1px solid #D2D2D2;
+    border-radius: 5px;
+    color: #fff;
+    padding: 12px 42px 11px;
+}
+
+
+
+/*  This css for mobile device
+=============================================================== */
+
+/*mobile home faqs*/
+.mobilehome_faqs_area {
+    margin-bottom: 30px;
+}
+.mobilehome_faqs_area h2 {
+    font-size: 18px;
+    line-height: 22px;
+    margin-bottom: 10px;
+}
+.mobilehome_faqs_area button.accordion-button {
+    font-size: 14px;
+    line-height: 18px;
+    color: #007EB9 !important;
+    padding: 8px 25px;
+}
+.mobilehome_faqs_area .accordion-body{
+    padding: 0 25px;
+}
+.mobilehome_faqs_area .accordion-body p {
+    font-size: 12px;
+    line-height: 25px;
+}
+.mobilehome_faqs_area .accordion-item h2 {
+    margin-bottom: 0;
+}
+
+/*Mobile footer*/
+.mobile_footer_area button.accordion-button {
+    font-size: 16px;
+    line-height: 35px;
+    color: #033333 !important;
+    padding: 8px 15px;
+    background: none;
+}
+
+.mobile_footer_area .accordion-body ul li a {
+    font-size: 16px;
+    line-height: 35px;
+    color: #033333;
+    font-family: 'AmazonEmber_Rg';
+}
+.mobile_footer_area .accordion-body{
+    padding: 0 15px;
+    margin-left: 25px;
+}
+
+.mobile_footer_area .accordion-button::before {
+    right: 0;
+    left: auto;
+    top: 22px;
+}
+
+/*booking details mobile result */
+section.mobile_details_train_result_area {
+        margin-top: -323px;
+    }
+    .mobile_detail_result_box {
+        background: #fff;
+        border-radius: 3px;
+        padding: 8px 15px;
+    }
+    .result_box_text h3 {
+        font-size: 16px;
+        line-height: 20px;
+        font-family: 'Amazon-Ember-Medium';
+    }
+
+    .result_box_text p {
+        font-size: 10px;
+        line-height: 13px;
+        margin-top: 2px;
+    }
+
+    .result_box_text {
+        margin-left: 10px;
+    }

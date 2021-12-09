@@ -1,0 +1,803 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Travel booking - Home</title>
+
+	<!-- bootstrap -->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+	<!-- slick css -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css">
+
+	<!-- font awesome 5 -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css">
+
+	<!-- JqueryUi -->
+	 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/themes/base/jquery-ui.min.css">
+	<!-- Main Css -->
+	<link href="asset/css/style.css" rel="stylesheet">
+	<link href="asset/css/responsive.css" rel="stylesheet">
+</head>
+<body>
+
+<!-- Body code start here -->
+<div class="wrapper">
+
+<!-- Mobile Header Area -->
+<section class="mobile_header_area mobile_show">
+	<div class="container-fluid section_padding">
+		<div class="mobile_top_header d-flex justify-content-between">
+			<div class="off_can_trigger">
+				<a href="#"><img src="asset/img/icons/triger-line.svg" alt="3line"></a>
+			</div>
+			<div class="mobile_logo">
+				<a href="#"><img src="asset/img/logo/mobile-logo.svg" alt="logo"></a>
+			</div>
+			<div class="mobile_profile">
+				<a href="#"><img src="asset/img/icons/profile-white.png" alt="profile"></a>
+			</div>
+		</div>
+
+		<div class="off_canvas_menu_area">
+	      <span class="off_canvas_close"><i class="fas fa-times"></i></span>
+	      <ul>
+	          <li><a href="#">Contact us</a></li>
+	          <li><a href="#">Help</a></li>
+	          <li><a href="#">My Account</a></li>
+	          <li><a href="#">Sign In</a></li>
+	      </ul>      
+	    </div>
+	    <div class="off_canvas_overlay"></div>
+
+		<!-- mobile menu -->
+		<div class="mobile_menu_area">
+			<div class="mobile_menu">
+				<ul class="d-flex justify-content-between align-items-center">
+			        <li><a class="mobile_search_btn" href="#">Search Trains</a></li>
+			        <li><a href="#">Check PNR Status</a></li>
+			        <li><a href="#">Live Station</a></li>
+			        <li><a href="#">Search by Train Name or Number</a></li>
+			        <li><a href="#">Train Live Status</a></li>
+			        <li><a href="#">Check PNR Status</a></li>
+			        <li><a href="#">Train Live Status</a></li>
+			        <li><a href="#">Live Station</a></li>
+			    </ul>
+			</div>
+		</div>
+	</div>
+</section>
+<!-- End Mobile Header Area -->
+
+
+<!-- Header Area -->
+<header id="header">
+	<!-- top header -->
+	<section id="header-top" class="top-header">
+		<div class="container-fluid section_padding">
+			<div class="row">
+				<div class="col-md-12">
+					<ul class="nav nav-pills justify-content-end align-items-center">
+					  <li class="nav-item">
+					    <a class="nav-link" href="#">Contact Us</a>
+					  </li>
+					  <li class="nav-item">
+					    <a class="nav-link" href="#">Help</a>
+					  </li>
+					  <li class="nav-item dropdown">
+					    <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false"><img src="asset/img/icons/profile-white.png" alt="image">My Account</a>
+					    <ul class="dropdown-menu">
+					      <li><a class="dropdown-item" href="#">Account 1</a></li>
+					      <li><a class="dropdown-item" href="#">Account 2</a></li>
+					    </ul>
+					  </li>
+					  <li class="nav-item dropdown">
+					    <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Sign in</a>
+					    <ul class="dropdown-menu">
+					      <li><a class="dropdown-item" href="#">Sign in 1</a></li>
+					      <li><a class="dropdown-item" href="#">Sign in 2</a></li>
+					    </ul>
+					  </li>
+					  	<li>
+					  		<button class="btn btn-sm btn-outline-secondary" type="button">Create an Account</button>
+					  	</li>
+					</ul>						
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- end top header -->
+
+	<!-- middle header -->
+	<div class="middle_header" id="middle_header">
+		<div class="container-fluid section_padding">
+			<div class="row">
+				<div class="col-md-12">
+					<div class="logo">
+						<a href="#"><img src="asset/img/logo/Logo.svg" alt="Logo"></a>
+					</div>
+				</div>
+			</div>				
+		</div>
+	</div>
+	<!-- End middle header -->
+
+	<!-- bottom header -->
+	<div class="bottom_header_area">
+		<div class="container-fluid section_padding">
+			<nav class="navbar_area">
+				<ul class="d-flex justify-content-between align-items-center">
+			        <li><a href="#">Search Trains</a></li>
+			        <li><a href="#">Search by Train Name or Number</a></li>
+			        <li><a href="#">Check PNR Status</a></li>
+			        <li><a href="#">Train Live Status</a></li>
+			        <li><a href="#">Live Station</a></li>
+			        <li><a href="#">Check PNR Status</a></li>
+			        <li><a href="#">Train Live Status</a></li>
+			        <li><a href="#">Live Station</a></li>
+			    </ul>
+			</nav>
+		</div>
+	</div>
+	<!-- End bottom header -->
+</header>
+
+
+<!-- Book your train tickets area -->
+<section class="book_your_ticket_area" id="book_your_ticket_area">
+	<div class="container-fluid section_padding">
+		<div class="row">
+			<div class="col-md-10 offset-md-1">
+				<h2 class="text-center">Book Your Train Tickets</h2>
+				<div class="TrainSearch">
+			      <div class="fromStation">
+			        <div class="user-input-wrp from_input">
+			          <input type="text" name="first_name" class="stationpicker ui-autocomplete-input" id="fromStation_input" onchange="enable_btn()" autocomplete="off">
+			          <label for="fromStation_input" class="">From</label>
+			        </div>
+			      </div>
+
+			      <div class="toStation">
+			        <div class="user-input-wrp to_input">
+			          <input type="text" name="last_name" class="stationpicker ui-autocomplete-input" id="toStation_input" onchange="enable_btn()" autocomplete="off">
+			          <label for="toStation_input" class="">To</label>
+			        </div>
+			        <div class="interchange-name">
+			          <img width="25px" height="25px" class="interchange-city text-center marg-top-10" alt="Inter Change" onclick="changeCity()" src="asset/img/icons/exchange.svg">
+			        </div>
+			        <span class="vertical-divider"></span>
+			      </div>
+
+			      <div class="CalenderBlock">
+			        <div class="dateSection">
+			          <p class="doj-text">Departure Date<img src="asset/img/icons/calendars.png" alt="image"></p>
+			          <div id="newCal" class="date_designs">
+			            <span id="dp-date">9</span>
+			            <span id="dp-day" class="">Nov, TUE</span>
+			          </div>
+			          <input width="50%" type="text" name="" class="setDate calendar hasDatepicker" placeholder="DD/MM/YYYY" id="datepicker" readonly="" value="" onchange="enable_btn()">
+			        </div>
+			        <div class="nextDays" onclick="enable_btn()">
+			          <div class="next-date active-date" onclick="set_date(1)">
+			            <p class="Next_DY_1">10 Nov</p>
+			            <p class="Next_WD_1">Sat</p>
+			          </div>
+			          <div class="next-date" onclick="set_date(2)">
+			            <p class="Next_DY_2">14 Nov</p>
+			            <p class="Next_WD_2">WED</p>
+			          </div>
+			          <div class="next-date" onclick="set_date(3)">
+			            <p class="Next_DY_3">11 Nov</p>
+			            <p class="Next_WD_3">THU</p>
+			          </div>
+			        </div>
+			        <span class="vertical-divider"></span>
+			      </div>
+			      <div class="buttonBlock">
+			        <button class="SearchTrain-btn" id="SearchTrainbtn"><img src="asset/img/icons/Search.svg" alt="search-icon">Search</button>
+			      </div>
+			    </div>
+			    <h3 class="text-center"><img src="asset/img/icons/apply-secure.png" alt="image">IRCTC Authorised Partner</h3>
+			</div>
+		</div>
+	</div>
+</section>
+<!-- End Book your train tickets area -->
+
+
+<!-- Exclusive Offer Area -->
+<section class="exclusive_offer_area" id="exclusive_offer_area">
+	<div class="container-fluid section_padding">
+		<h2>Exclusive Offers</h2>
+		<div id="exclusive_offer_items" class="d-flex">
+			<div class="single_offer_border">
+				<div class="single_ex_offter d-flex justify-content-center">
+					<div class="ex_offer_img">
+						<img src="asset/img/icons/trainnew_hp.png" alt="image">
+					</div>
+					<span></span>
+					<div class="ex_offer_item">
+						<h3>First Time User</h3>
+						<h2>Free Coupon</h2>
+						<a href="#">Copy</a>
+						<p>Valid till: 15th Nov, 2021</p>
+					</div>
+				</div>
+			</div>
+			<div class="single_offer_border">
+				<div class="single_ex_offter d-flex justify-content-center">
+					<div class="ex_offer_img">
+						<img src="asset/img/icons/trainnew_hp.png" alt="image">
+					</div>
+					<span></span>
+					<div class="ex_offer_item">
+						<h3>First Time User</h3>
+						<h2>Free Coupon</h2>
+						<a href="#">Copy</a>
+						<p>Valid till: 15th Nov, 2021</p>
+					</div>
+				</div>
+			</div>
+			<div class="single_offer_border">
+				<div class="single_ex_offter d-flex justify-content-center">
+					<div class="ex_offer_img">
+						<img src="asset/img/icons/trainnew_hp.png" alt="image">
+					</div>
+					<span></span>
+					<div class="ex_offer_item">
+						<h3>First Time User</h3>
+						<h2>Free Coupon</h2>
+						<a href="#">Copy</a>
+						<p>Valid till: 15th Nov, 2021</p>
+					</div>
+				</div>
+			</div>
+			<div class="single_offer_border">
+				<div class="single_ex_offter d-flex justify-content-center">
+					<div class="ex_offer_img">
+						<img src="asset/img/icons/trainnew_hp.png" alt="image">
+					</div>
+					<span></span>
+					<div class="ex_offer_item">
+						<h3>First Time User</h3>
+						<h2>Free Coupon</h2>
+						<a href="#">Copy</a>
+						<p>Valid till: 15th Nov, 2021</p>
+					</div>
+				</div>
+			</div>
+			<div class="single_offer_border">
+				<div class="single_ex_offter d-flex justify-content-center">
+					<div class="ex_offer_img">
+						<img src="asset/img/icons/trainnew_hp.png" alt="image">
+					</div>
+					<span></span>
+					<div class="ex_offer_item">
+						<h3>First Time User</h3>
+						<h2>Free Coupon</h2>
+						<a href="#">Copy</a>
+						<p>Valid till: 15th Nov, 2021</p>
+					</div>
+				</div>
+			</div>
+			<div class="single_offer_border">
+				<div class="single_ex_offter d-flex justify-content-center">
+					<div class="ex_offer_img">
+						<img src="asset/img/icons/trainnew_hp.png" alt="image">
+					</div>
+					<span></span>
+					<div class="ex_offer_item">
+						<h3>First Time User</h3>
+						<h2>Free Coupon</h2>
+						<a href="#">Copy</a>
+						<p>Valid till: 15th Nov, 2021</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+<!-- End Exclusive Offer Area -->
+
+
+<!-- Why Choose area -->
+<section class="why_choose_area" id="why_choose_area">
+	<div class="container-fluid section_padding">
+		<h2 class="text-center">Why Choose EaseMyTrip for Train Booking?</h2>
+		<div class="row">
+			<div class="col-md-3">
+				<div class="single_why_choose">
+					<div class="status_img">
+						<h3><img src="asset/img/icons/apply-coupons.png" alt="image">PNR Status</h3>
+					</div>
+					<p>Check the PNR Status of your assigned railway ticket. Enter your PNR number to get the same.</p>
+				</div>
+			</div>
+			<div class="col-md-3">
+				<div class="single_why_choose">
+					<div class="status_img">
+						<h3><img src="asset/img/icons/live-stations.png" alt="image">Live Station</h3>
+					</div>
+					<p>Get a complete list of trains that shall be arriving at the railway station of your choice at the time </p>
+				</div>
+			</div>
+			<div class="col-md-3">
+				<div class="single_why_choose">
+					<div class="status_img">
+						<h3><img src="asset/img/icons/apply-secure.png" alt="image">IRCTC Train Food Booking</h3>
+					</div>
+					<p>Check the PNR Status of your assigned railway ticket. Enter your PNR number to get the same.</p>
+				</div>
+			</div>
+			<div class="col-md-3">
+				<div class="single_why_choose">
+					<div class="status_img">
+						<h3><img src="asset/img/icons/apply-coupons.png" alt="image">Travel Advisory</h3>
+					</div>
+					<p>Enjoy booking IRCTC Food &  Get Food Delivered on Train </p>
+				</div>
+			</div>
+			<div class="col-md-3">
+				<div class="single_why_choose">
+					<div class="status_img">
+						<h3><img src="asset/img/icons/apply-coupons.png" alt="image">IRCTC Train Food Booking</h3>
+					</div>
+					<p>Get a complete list of trains that shall be arriving at the railway station of your choice at the time </p>
+				</div>
+			</div>
+			<div class="col-md-3">
+				<div class="single_why_choose">
+					<div class="status_img">
+						<h3><img src="asset/img/icons/food-tracks.png" alt="image">Travel Advisory</h3>
+					</div>
+					<p>Get a complete list of trains that shall be arriving at the railway station of your choice at the time </p>
+				</div>
+			</div>
+			<div class="col-md-3">
+				<div class="single_why_choose">
+					<div class="status_img">
+						<h3><img src="asset/img/icons/apply-coupons.png" alt="image"> PNR Status</h3>
+					</div>
+					<p>You should know latest COVID-19 travel guidelines before booking your train.</p>
+				</div>
+			</div>
+			<div class="col-md-3">
+				<div class="single_why_choose">
+					<div class="status_img">
+						<h3><img src="asset/img/icons/support.png" alt="image">24/7 Customer Service</h3>
+					</div>
+					<p>We work 24 hours a day to make sure our availability whenever our customers need us.</p>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+<!-- End Why Choose area -->
+
+<!-- Top train routes area -->
+<section class="top_train_routes_area">
+	<div class="container-fluid section_padding">
+		<h2 class="text-center">Top Train Routes</h2>
+		<div class="row">
+			<div class="col-md-10 offset-md-1">
+				<div class="single_routes_search d-flex justify-content-between">
+					<p><img src="asset/img/icons/Awrro.svg" alt="image">NEW DELHI -JAMMU TAWI(NDLS-JAT)</p>
+					<a href="#">Search Train</a>
+				</div>
+				<div class="single_routes_search d-flex justify-content-between">
+					<p><img src="asset/img/icons/Awrro.svg" alt="image">NEW DELHI -PATNA JN(NDLS-PNBE)</p>
+					<a href="#">Search Train</a>
+				</div>
+				<div class="single_routes_search d-flex justify-content-between">
+					<p><img src="asset/img/icons/Awrro.svg" alt="image">HOWRAH JN -JAIPUR(HWH-JP)</p>
+					<a href="#">Search Train</a>
+				</div>
+				<div class="single_routes_search d-flex justify-content-between">
+					<p><img src="asset/img/icons/Awrro.svg" alt="image">HYDERABAD DECAN -CHENNAI CENTRAL(HYB-MAS)</p>
+					<a href="#">Search Train</a>
+				</div>
+				<div class="single_routes_search d-flex justify-content-between">
+					<p><img src="asset/img/icons/Awrro.svg" alt="image">MUMBAI CENTRAL -PUNE JN(BCT-PUNE)</p>
+					<a href="#">Search Train</a>
+				</div>
+				<div class="single_routes_search d-flex justify-content-between">
+					<p><img src="asset/img/icons/Awrro.svg" alt="image">PATNA JN -GUWAHATI(PNBE-GHY)</p>
+					<a href="#">Search Train</a>
+				</div>
+				<div class="single_routes_search d-flex justify-content-between">
+					<p><img src="asset/img/icons/Awrro.svg" alt="image">NEW DELHI -LUCKNOW NE(NDLS-LJN)</p>
+					<a href="#">Search Train</a>
+				</div>
+				<div class="single_routes_search d-flex justify-content-between">
+					<p><img src="asset/img/icons/Awrro.svg" alt="image">VIJAYAWADA JN -CHENNAI CENTRAL(BZA-MAS)</p>
+					<a href="#">Search Train</a>
+				</div>
+				<div class="single_routes_search d-flex justify-content-between">
+					<p><img src="asset/img/icons/Awrro.svg" alt="image">INDORE JN BG -MUMBAI CENTRAL(INDB-BCT)</p>
+					<a href="#">Search Train</a>
+				</div>
+				<div class="single_routes_search d-flex justify-content-between">
+					<p><img src="asset/img/icons/Awrro.svg" alt="image">JAIPUR -AHMEDABAD JN(JP-ADI)</p>
+					<a href="#">Search Train</a>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+<!-- End Top train routes area -->
+
+<!-- IRCTC train booking area -->
+<section class="irctc_train_booking_area">
+	<div class="container-fluid section_padding">
+		<div class="row">
+			<div class="col-md-10 offset-md-1">
+				<h2 class="text-center">IRCTC Train Booking Offers – Avail Best Deals on Train Tickets</h2>
+				<p>Railway is the most affordable way to travel in India and as a trustworthy travel brand; EaseMyTrip understands the value of your money and desire to travel. To make your train ticket booking more convenient, we are pleased to tie up IRCTC. Customer can book IRCTC train tickets in the most convenient way with our website. The best thing is that you will get the cheapest train tickets for your preferred locations through EaseMyTrip as we don’t charge convenience fee train ticket booking as well. So, get ready for amazing offers on railway booking and plan your trip soon.</p>				
+			</div>
+		</div>
+	</div>
+</section>
+<!-- End IRCTC train booking area -->
+
+
+<!-- FAQs area -->
+<section class="faqs_area">
+	<div class="container-fluid section_padding">
+<!-- Mobile faqs  -->
+		<div class="mobilehome_faqs_area mobile_show">
+			<div row>
+				<div class="col-md-12">
+					<h2 class="text-center">FAQs</h2>
+					<div class="accordion" id="accordionExample">
+						<div class="accordion-item">
+							<h2 class="accordion-header" id="headingOne">
+							  <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+							   What is RailYatri cash?
+							  </button>
+							</h2>
+							<div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+							  <div class="accordion-body">
+							    <p>RailYatri cash is a RailYatri currency that is added in the Wallet through our various cash back offers. Cash backs are credited to your wallet, when you have availed any of our e-commerce services (such as Food, Bus or hotel booking services). With the RY cash, deposited in your wallet, you can make future purchases.</p>
+							  </div>
+							</div>
+						</div>
+						<div class="accordion-item">
+							<h2 class="accordion-header" id="headingOne">
+							  <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapsetwo" aria-expanded="false" aria-controls="collapsetwo">
+							   How can I earn more reward points?
+							  </button>
+							</h2>
+							<div id="collapsetwo" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+							  <div class="accordion-body">
+							    <p>RailYatri cash is a RailYatri currency that is added in the Wallet through our various cash back offers. Cash backs are credited to your wallet, when you have availed any of our e-commerce services (such as Food, Bus or hotel booking services). With the RY cash, deposited in your wallet, you can make future purchases.</p>
+							  </div>
+							</div>
+						</div>
+						<div class="accordion-item">
+							<h2 class="accordion-header" id="headingOne">
+							  <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapsethree" aria-expanded="false" aria-controls="collapsethree">
+							   How can I earn more reward points?
+							  </button>
+							</h2>
+							<div id="collapsethree" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+							  <div class="accordion-body">
+							    <p>RailYatri cash is a RailYatri currency that is added in the Wallet through our various cash back offers. Cash backs are credited to your wallet, when you have availed any of our e-commerce services (such as Food, Bus or hotel booking services). With the RY cash, deposited in your wallet, you can make future purchases.</p>
+							  </div>
+							</div>
+						</div>
+						<div class="accordion-item">
+							<h2 class="accordion-header" id="headingOne">
+							  <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapsefour" aria-expanded="false" aria-controls="collapsefour">
+							   How do I redeem my Reward Points?
+							  </button>
+							</h2>
+							<div id="collapsefour" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+							  <div class="accordion-body">
+							    <p>RailYatri cash is a RailYatri currency that is added in the Wallet through our various cash back offers. Cash backs are credited to your wallet, when you have availed any of our e-commerce services (such as Food, Bus or hotel booking services). With the RY cash, deposited in your wallet, you can make future purchases.</p>
+							  </div>
+							</div>
+						</div>
+						<div class="accordion-item">
+							<h2 class="accordion-header" id="headingOne">
+							  <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapsefive" aria-expanded="false" aria-controls="collapsefive">
+							   What is the difference between RailYatri Cash and RailYatri Reward Points?
+							  </button>
+							</h2>
+							<div id="collapsefive" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+							  <div class="accordion-body">
+							    <p>RailYatri cash is a RailYatri currency that is added in the Wallet through our various cash back offers. Cash backs are credited to your wallet, when you have availed any of our e-commerce services (such as Food, Bus or hotel booking services). With the RY cash, deposited in your wallet, you can make future purchases.</p>
+							  </div>
+							</div>
+						</div>
+						<div class="accordion-item">
+							<h2 class="accordion-header" id="headingOne">
+							  <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapsesix" aria-expanded="false" aria-controls="collapsesix">
+							   How can I use my Reward Points once I have re-installed RailYatri app?
+							  </button>
+							</h2>
+							<div id="collapsesix" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+							  <div class="accordion-body">
+							    <p>RailYatri cash is a RailYatri currency that is added in the Wallet through our various cash back offers. Cash backs are credited to your wallet, when you have availed any of our e-commerce services (such as Food, Bus or hotel booking services). With the RY cash, deposited in your wallet, you can make future purchases.</p>
+							  </div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+<!-- end mobile faqs -->
+
+		<div class="row desktop_show tablet_show_faq">
+			<div class="col-md-10 offset-md-1">
+				<div class="faq_items">
+					<h2 class="text-center">FAQs</h2>
+					<div class="single_faq">
+						<p class="faq_title">Q) How can I Book Train Tickets Online?</p>
+						<p>A: To book train tickets online, log on to the EaseMyTrip website and click on the train tab. Search trains for your preferred route and date and then check availability. If your tickets are available, you can proceed to next step. If there is waiting list, you can still go for booking your train tickets. Once you click on continue option, you will be asked to verify your IRCTC id to continue booking online train tickets. Now, you can enter the passenger details and proceed to book. You will be prompted about your IRCTC password. Now you will be directed to the "Payment Option" section where choose the method for payment. After entering the details, you have to fill your IRCTC password and then your transaction of online train booking will be processed and you will receive a booking confirmation.</p>
+					</div>
+					<div class="single_faq">
+						<p class="faq_title">Q) How can I Book Train Tickets in Tatkal Quota?</p>
+						<p>A: Tatkal ticket reservation is a facility that allows the passengers taking a train journey on a short notice. Tatkal quota opens one day advance excluding the date of journey from the originating station of the train.</p>
+						<p>Tatkal Train Ticket Booking Timings are:</p>
+						<p>AC Class - 10:15 AM</p>
+						<p>Sleeper Class - 11:15 AM</p>
+						<p>You have to opt for Tatkal quota to book tatkal tickets.</p>
+					</div>
+					<div class="single_faq">
+						<p class="faq_title">Q) What are the RAC, GNWL, PQWL, RLWL and TQWL in Railway Reservation?</p>
+						<p>A: All of the above except RAC are the types of waiting list available with train booking. WL with a number suggests the waitlisted status of a passenger.</p>
+						<p>RAC means Reservation against Cancellation. If you have an RAC ticket, then your travel with a train is guaranteed but you will be given a seat (half of a side lower berth mostly) to sit and travel not an entire berth.</p>
+						<p>GNWL General Waiting List waitlisted tickets are issued to the passenger who begins his/her journey from the originating station of a route or stations closer to the originating station.</p>
+						<p>PQWL Pooled Quota Waiting List is shared by several small stations of a train route. The quota generally operates from originating station of a train route and only one Pooled Quota is there for entire run. The Pooled Quota is usually selected for the passengers travelling from the originating station to one or few stations short of the terminating station, or from a midway station to the terminating station, or between two stations coming midway of the entire route</p>
+						<p>RLWL Remote Location Waiting List ticket is issued for the stations between the originating and terminating stations. Usually these are important towns or cities of that particular route. These tickets are given a separate priority and their confirmations will depend on the cancellations of a confirmed ticket. Remote location stations prepare their own chart 2-3 hours prior to the actual departure of train. There are less chances of confirmation for such waitlisted tickets</p>
+						<p>TQWL Tatkal Quota Waiting List was earlier CKWL. It is the waiting list tickets booked under Tatkal Quota. TQWL tickets directly get confirm and don’t go through RAC. However, GNWL is given priority over TQWL.</p>
+					</div>
+					<div class="single_faq">
+						<p class="faq_title">Q) What is Premium Tatkal?</p>
+						<p>A: Premium Tatkal is a new quota introduced by railway to book online train tickets. Under this quota, dynamic fares are applicable. Premium Tatkal fare increases following the number of bookings. Booking Premium Tatkal (PT) ticket is much costlier than Tatkal because of the dynamic fare pricing. In this case, train ticket prices depend on the booking rates and availability of seats.</p>
+					</div>
+					<div class="single_faq">
+						<p class="faq_title">Q) How can I Cancel Tatkal Tickets?</p>
+						<p>A: On cancellation of confirmed Tatkal tickets, no refund is given. On the cancellation of contingent and waitlisted Tatkal tickets, amount will be charged as per the existing rules of Railway. However, you can partially cancel the Tatkal e-tickets.</p>
+					</div>
+					<div class="single_faq">
+						<p class="faq_title">Q) What are the Cancellation Charges for Train Tickets?</p>
+						<p>A: To get refunds on cancellation of train tickets, passengers should cancel their tickets before chart preparation. If a confirmed train ticket is cancelled more than 48 hrs prior to the scheduled departure of the train, cancellation charges will be Rs.240/- for AC First Class/Executive Class, Rs.200/- for AC 2 Tier/First Class, Rs. 180 for AC 3 Tier/AC Chair car/ AC 3 Economy, Rs.120/- for Sleeper Class and Rs.60/- for Second Class. These cancellation charges are applicable per ticket per passenger and same will be deducted before processing the refunds. If a confirmed ticket is cancelled between 48 and 12 hours prior to the scheduled departure of the train, cancellation charges will be 25% of the fare (subject to the above mentioned minimum flat rate). Between 12 hours and 4 hours prior to the scheduled departure of the train up to chart preparation (whichever is earlier), 50% of the fare paid subject to the minimum cancellation charges.</p>
+					</div>
+					<div class="single_faq">
+						<p class="faq_title">Q) How Many Days in Advance you can Book Train Tickets?</p>
+						<p>A: Advance Reservation Period for booking train tickets is 120 days (excluding the date of journey). So, booking in trains from train originating stations will open and remain available for 120 days.</p>
+					</div>
+					<div class="single_faq">
+						<p class="faq_title">Q) When the Chart of a Train is Prepared?</p>
+						<p>A: The first chart of a train is typically prepared 4 hours ahead of its departure from originating station or remote location station. Chart of early morning trains is prepared the night before. However, if some seats still remain available, they can be booked by the passengers. So, the final chart is created 30 minutes before departure of train.</p>
+					</div>
+					<div class="single_faq">
+						<p class="faq_title">Q) Can I Change My Train Booking?</p>
+						<p>A: You can’t change your train booking. All that you can do is to cancel your current ticket and book again.</p>
+					</div>
+					<div class="single_faq">
+						<p class="faq_title">Q) How to Order Food in Train?</p>
+						<p>A: There are several websites and apps that offer food delivery services in train. You can order food in trains using your mobile phone and food will be delivered at your berth. With little efforts, modern day travelers can enjoy the best meals during their train journeys. Food is delivered from reputed restaurants in the locality and multiple payment options are available for the same.</p>
+					</div>
+					<div class="single_faq">
+						<p class="faq_title">Q) What is the Concession for Senior Citizens Quota?</p>
+						<p>A: Indian railway gives the facility to senior citizens for booking train tickets under senior citizen quota by availing a concession. As per the rules, male senior citizens of 60 years and above and lady senior citizens of 58 years and above can avail the concession in the fares of all classes of Mail/Express/Rajdhani/Shatabdi/Jan-Shatabdi/Duronto group of trains. The concession amount for men is 40% and for women is 50%.</p>
+					</div>
+					<div class="single_faq">
+						<p class="faq_title">Q) What is Ladies Quota in Trains?</p>
+						<p>A: This quota is only for lady travelers or accompanying male child below 12 years. Ladies quota is available in sleeper class and second sitting class.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+<!-- End FAQ area -->
+
+
+<!-- Footer area -->
+	<!-- footer top -->
+<section class="footer_top_area">
+	<div class="container-fluid section_padding">
+
+		<div class="row mobile_show tablet_show">
+			<div class="col-md-12">
+				<div class="footer_logo">
+					<a href="#"><img src="asset/img/logo/Logo.svg" alt="Logo"></a>
+				</div>
+			</div>
+			<div class="col-md-12">
+				<div class="mobile_footer_area">
+					<div class="accordion" id="accordionExample">
+					  <div class="accordion-item">
+					    <h2 class="accordion-header" id="headingOne">
+					      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+					       About Tesco
+					      </button>
+					    </h2>
+					    <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+					      <div class="accordion-body">
+					        <ul>
+					        	<li><a href="#">Store vacancies</a></li>
+					        	<li><a href="#">Careers</a></li>
+					        	<li><a href="#">Tesco PLC</a></li>
+					        	<li><a href="#">Our little helps</a></li>
+					        </ul>
+					      </div>
+					    </div>
+					  </div>
+
+					  <div class="accordion-item">
+					    <h2 class="accordion-header" id="headingOne">
+					      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapsetwo" aria-expanded="false" aria-controls="collapsetwo">
+					       Here to help
+					      </button>
+					    </h2>
+					    <div id="collapsetwo" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+					      <div class="accordion-body">
+					        <ul>
+					        	<li><a href="#">Help & FAQs</a></li>
+					        	<li><a href="#">Contact us</a></li>
+					        </ul>
+					      </div>
+					    </div>
+					  </div>
+
+					  <div class="accordion-item">
+					    <h2 class="accordion-header" id="headingOne">
+					      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapsethree" aria-expanded="false" aria-controls="collapsethree">
+					       Useful links
+					      </button>
+					    </h2>
+					    <div id="collapsethree" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+					      <div class="accordion-body">
+					        <ul>
+					        	<li><a href="#">Pharmacy</a></li>
+					        	<li><a href="#">Product recall</a></li>
+					        	<li><a href="#">Store locator</a></li>
+					        	<li><a href="#">Bags of Help</a></li>
+					        	<li><a href="#">Rate this page</a></li>
+					        </ul>
+					      </div>
+					    </div>
+					  </div>
+
+					  <div class="accordion-item">
+					    <h2 class="accordion-header" id="headingOne">
+					      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapsefour" aria-expanded="false" aria-controls="collapsefour">
+					       Our website
+					      </button>
+					    </h2>
+					    <div id="collapsefour" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+					      <div class="accordion-body">
+					        <ul>
+					        	<li><a href="#">Terms & conditions</a></li>
+					        	<li><a href="#">Privacy & cookies policy</a></li>
+					        	<li><a href="#">Privacy centre</a></li>
+					        	<li><a href="#">Site map</a></li>
+					        	<li><a href="#">Accessibility</a></li>
+					        </ul>
+					      </div>
+					    </div>
+					  </div>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-12">
+				<div class="footer_social_icon">
+					<ul class="d-flex justify-content-center">
+						<li>Follow us:</li>
+						<li><a href="#"><img src="asset/img/social/twitter.png" alt=""></a></li>
+						<li><a href="#"><img src="asset/img/social/googleplus.png" alt=""></a></li>
+						<li><a href="#"><img src="asset/img/social/facebook.png" alt=""></a></li>
+						<li><a href="#"><img src="asset/img/social/instagram.png" alt=""></a></li>
+						<li><a href="#"><img src="asset/img/social/bell.png" alt=""></a></li>
+						<li><a href="#"><img src="asset/img/social/vimeo.png" alt=""></a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+
+		<div class="row desktop_show">
+			<div class="col-md-3">
+				<div class="footer_logo">
+					<a href="#"><img src="asset/img/logo/Logo.svg" alt="Logo"></a>
+				</div>
+			</div>
+
+			<div class="col-md-2">
+				<div class="footer_menu">
+					<ul>
+						<li><a href="#">Here to help</a></li>
+						<li><a href="#">Help & FAQs</a></li>
+						<li><a href="#">Contact us</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="col-md-2">
+				<div class="footer_menu">
+					<ul>
+						<li><a href="#">About Tesco</a></li>
+						<li><a href="#">Store vacancies</a></li>
+						<li><a href="#">Careers</a></li>
+						<li><a href="#">Tesco PLC</a></li>
+						<li><a href="#">Our little helps</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="col-md-3">
+				<div class="footer_menu">
+					<ul>
+						<li><a href="#">Our website</a></li>
+						<li><a href="#">Terms & conditions</a></li>
+						<li><a href="#">Privacy & cookies policy</a></li>
+						<li><a href="#">Privacy centre</a></li>
+						<li><a href="#">Site map</a></li>
+						<li><a href="#">Accessibility</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="col-md-2">
+				<div class="footer_menu">
+					<ul>
+						<li><a href="#">Useful links</a></li>
+						<li><a href="#">Pharmacy</a></li>
+						<li><a href="#">Product recall</a></li>
+						<li><a href="#">Store locator</a></li>
+						<li><a href="#">Bags of Help</a></li>
+						<li><a href="#">Rate this page</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="col-md-12">
+				<div class="footer_social_icon">
+					<ul class="d-flex">
+						<li>Follow us:</li>
+						<li><a href="#"><img src="asset/img/social/twitter.png" alt=""></a></li>
+						<li><a href="#"><img src="asset/img/social/googleplus.png" alt=""></a></li>
+						<li><a href="#"><img src="asset/img/social/facebook.png" alt=""></a></li>
+						<li><a href="#"><img src="asset/img/social/instagram.png" alt=""></a></li>
+						<li><a href="#"><img src="asset/img/social/bell.png" alt=""></a></li>
+						<li><a href="#"><img src="asset/img/social/vimeo.png" alt=""></a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+	<!-- end footer top -->
+
+	<!-- footer bottom -->
+<section class="footer_bootom">
+	<div class="container-fluid section_padding text-center">
+		<p>©2021 RailYatri.in. All Rights Reserved</p>
+	</div>
+</section>
+	<!-- end footer bottom -->
+<!-- End Footer area -->
+
+
+
+</div>
+<!-- End body code start here -->
+
+
+
+
+<!-- jquery -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" ></script>
+<!-- bootstrap bundle -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+<!-- jquery ui -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+<!-- slick js -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+<!-- main js -->
+<script src="asset/js/custom.js"></script>
+
+
+</body>
+</html>

@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="15" height="15" viewBox="0 0 15 15">
+  <defs>
+    <filter id="Ellipse_14">
+      <feOffset dy="3" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feFlood flood-opacity="0.161" result="color"/>
+      <feComposite operator="out" in="SourceGraphic" in2="blur"/>
+      <feComposite operator="in" in="color"/>
+      <feComposite operator="in" in2="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="Group_1017" data-name="Group 1017" transform="translate(-915 -671)">
+    <g data-type="innerShadowGroup">
+      <circle id="Ellipse_14-2" data-name="Ellipse 14" cx="7.5" cy="7.5" r="7.5" transform="translate(915 671)" fill="#fff"/>
+      <g transform="matrix(1, 0, 0, 1, 915, 671)" filter="url(#Ellipse_14)">
+        <circle id="Ellipse_14-3" data-name="Ellipse 14" cx="7.5" cy="7.5" r="7.5" fill="#fff"/>
+      </g>
+      <g id="Ellipse_14-4" data-name="Ellipse 14" transform="translate(915 671)" fill="none" stroke="#707070" stroke-width="0.25">
+        <circle cx="7.5" cy="7.5" r="7.5" stroke="none"/>
+        <circle cx="7.5" cy="7.5" r="7.375" fill="none"/>
+      </g>
+    </g>
+    <path id="Path_1834" data-name="Path 1834" d="M.452,6.763.141.268A2.613,2.613,0,0,1,1.271,0,2.613,2.613,0,0,1,2.4.268L2.09,6.763Zm.819,3.445a1.241,1.241,0,0,1-.918-.353A1.241,1.241,0,0,1,0,8.937,1.241,1.241,0,0,1,.353,8.02a1.241,1.241,0,0,1,.918-.353,1.241,1.241,0,0,1,.918.353,1.241,1.241,0,0,1,.353.918,1.241,1.241,0,0,1-.353.918A1.241,1.241,0,0,1,1.271,10.208Z" transform="translate(923.528 683.73) rotate(180)" fill="#707070"/>
+  </g>
+</svg>

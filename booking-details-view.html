@@ -1,0 +1,987 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Booking Details</title>
+
+	<!-- bootstrap -->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+	<!-- slick css -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css">
+
+	<!-- font awesome 5 -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css">
+
+	<!-- JqueryUi -->
+	 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/themes/base/jquery-ui.min.css">
+	<!-- Main Css -->
+	<link href="asset/css/style.css" rel="stylesheet">
+	<link href="asset/css/responsive.css" rel="stylesheet">
+</head>
+<body>
+
+<!-- Body code start here -->
+<div class="wrapper">
+
+<!-- Mobile Header Area -->
+<section class="mobile_header_area mobile_show">
+	<div class="container-fluid section_padding">
+		<div class="mobile_top_header d-flex justify-content-between">
+			<div class="off_can_trigger">
+				<a href="#"><img src="asset/img/icons/triger-line.svg" alt="3line"></a>
+			</div>
+			<div class="mobile_logo">
+				<a href="#"><img src="asset/img/logo/mobile-logo.svg" alt="logo"></a>
+			</div>
+			<div class="mobile_profile">
+				<a href="#"><img src="asset/img/icons/profile-white.png" alt="profile"></a>
+			</div>
+		</div>
+
+		<div class="off_canvas_menu_area">
+	      <span class="off_canvas_close"><i class="fas fa-times"></i></span>
+	      <ul>
+	          <li><a href="#">Contact us</a></li>
+	          <li><a href="#">Help</a></li>
+	          <li><a href="#">My Account</a></li>
+	          <li><a href="#">Sign In</a></li>
+	      </ul>      
+	    </div>
+	    <div class="off_canvas_overlay"></div>
+
+		<!-- mobile menu -->
+		<div class="mobile_menu_area">
+			<div class="mobile_menu">
+				<ul class="d-flex justify-content-between align-items-center">
+			        <li><a class="mobile_search_btn" href="#">Search Trains</a></li>
+			        <li><a href="#">Check PNR Status</a></li>
+			        <li><a href="#">Live Station</a></li>
+			        <li><a href="#">Search by Train Name or Number</a></li>
+			        <li><a href="#">Train Live Status</a></li>
+			        <li><a href="#">Check PNR Status</a></li>
+			        <li><a href="#">Train Live Status</a></li>
+			        <li><a href="#">Live Station</a></li>
+			    </ul>
+			</div>
+		</div>
+	</div>
+</section>
+<!-- End Mobile Header Area -->
+
+
+<!-- Header Area -->
+<header id="header">
+	<!-- top header -->
+	<section id="header-top" class="top-header">
+		<div class="container-fluid section_padding">
+			<div class="row">
+				<div class="col-md-12">
+					<ul class="nav nav-pills justify-content-end align-items-center">
+					  <li class="nav-item">
+					    <a class="nav-link" href="#">Contact Us</a>
+					  </li>
+					  <li class="nav-item">
+					    <a class="nav-link" href="#">Help</a>
+					  </li>
+					  <li class="nav-item dropdown">
+					    <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false"><img src="asset/img/icons/profile-white.png" alt="image">My Account</a>
+					    <ul class="dropdown-menu">
+					      <li><a class="dropdown-item" href="#">Account 1</a></li>
+					      <li><a class="dropdown-item" href="#">Account 2</a></li>
+					    </ul>
+					  </li>
+					  <li class="nav-item dropdown">
+					    <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Sign in</a>
+					    <ul class="dropdown-menu">
+					      <li><a class="dropdown-item" href="#">Sign in 1</a></li>
+					      <li><a class="dropdown-item" href="#">Sign in 2</a></li>
+					    </ul>
+					  </li>
+					  	<li>
+					  		<button class="btn btn-sm btn-outline-secondary" type="button">Create an Account</button>
+					  	</li>
+					</ul>						
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- end top header -->
+
+	<!-- middle header -->
+	<div class="middle_header" id="middle_header">
+		<div class="container-fluid section_padding">
+			<div class="row">
+				<div class="col-md-12">
+					<div class="logo">
+						<a href="#"><img src="asset/img/logo/Logo.svg" alt="Logo"></a>
+					</div>
+				</div>
+			</div>				
+		</div>
+	</div>
+	<!-- End middle header -->
+
+	<!-- bottom header -->
+	<div class="bottom_header_area">
+		<div class="container-fluid section_padding">
+			<nav class="navbar_area">
+				<ul class="d-flex justify-content-between align-items-center">
+			        <li><a href="#">Search Trains</a></li>
+			        <li><a href="#">Search by Train Name or Number</a></li>
+			        <li><a href="#">Check PNR Status</a></li>
+			        <li><a href="#">Train Live Status</a></li>
+			        <li><a href="#">Live Station</a></li>
+			        <li><a href="#">Check PNR Status</a></li>
+			        <li><a href="#">Train Live Status</a></li>
+			        <li><a href="#">Live Station</a></li>
+			    </ul>
+			</nav>
+		</div>
+	</div>
+	<!-- End bottom header -->
+</header>
+
+<!-- Book your train tickets area -->
+<div class="red_bg booking_d"></div>
+<!-- mobile booking detail filtering -->
+<section class="mobile_details_train_result_area mobile_show">
+	<div class="container-fluid section_padding">
+		<div class="row">
+			<div class="col-md-12">
+				<div class="mobile_detail_result_box d-flex align-items-center">
+					<div class="result_box_arrow">
+						<a href="#"><img src="asset/img/icons/left-arrow.svg" alt="image"></a>
+					</div>
+					<div class="result_box_text">
+						<h3>HYDERABAD To BANGALORE</h3>
+						<p>12 Nov | SBC</p>
+					</div>
+				</div>
+			</div>			
+		</div>
+	</div>
+</section>
+<!-- End mobile booking detail filtering -->
+
+<section class="booking_detail_banner_area desktop_show tb_show">
+	<div class="container-fluid section_padding">
+		<div class="row">
+			<div class="col-md-10 offset-md-1">
+				<h2 class="text-center">Book Your Train Tickets</h2>
+				<div class="TrainSearch">
+			      <div class="fromStation">
+			        <div class="user-input-wrp from_input">
+			          <input type="text" name="first_name" class="stationpicker ui-autocomplete-input" id="fromStation_input" onchange="enable_btn()" autocomplete="off">
+			          <label for="fromStation_input" class="">From</label>
+			        </div>
+			      </div>
+
+			      <div class="toStation">
+			        <div class="user-input-wrp to_input">
+			          <input type="text" name="last_name" class="stationpicker ui-autocomplete-input" id="toStation_input" onchange="enable_btn()" autocomplete="off">
+			          <label for="toStation_input" class="">To</label>
+			        </div>
+			        <div class="interchange-name">
+			          <img width="25px" height="25px" class="interchange-city text-center marg-top-10" alt="Inter Change" onclick="changeCity()" src="asset/img/icons/exchange.svg">
+			        </div>
+			        <span class="vertical-divider"></span>
+			      </div>
+
+			      <div class="CalenderBlock">
+			        <div class="dateSection">
+			          <p class="doj-text">Departure Date<img src="asset/img/icons/calendars.png" alt="image"></p>
+			          <div id="newCal" class="date_designs">
+			            <span id="dp-date">9</span>
+			            <span id="dp-day" class="">Nov, TUE</span>
+			          </div>
+			          <input width="50%" type="text" name="" class="setDate calendar hasDatepicker" placeholder="DD/MM/YYYY" id="datepicker" readonly="" value="" onchange="enable_btn()">
+			        </div>
+			        <div class="nextDays" onclick="enable_btn()">
+			          <div class="next-date active-date" onclick="set_date(1)">
+			            <p class="Next_DY_1">10 Nov</p>
+			            <p class="Next_WD_1">Sat</p>
+			          </div>
+			          <div class="next-date" onclick="set_date(2)">
+			            <p class="Next_DY_2">14 Nov</p>
+			            <p class="Next_WD_2">WED</p>
+			          </div>
+			          <div class="next-date" onclick="set_date(3)">
+			            <p class="Next_DY_3">11 Nov</p>
+			            <p class="Next_WD_3">THU</p>
+			          </div>
+			        </div>
+			        <span class="vertical-divider"></span>
+			      </div>
+			      <div class="buttonBlock">
+			        <button class="SearchTrain-btn" id="SearchTrainbtn"><img src="asset/img/icons/Search.svg" alt="search-icon">Search</button>
+			      </div>
+			    </div>
+			</div>
+		</div>
+	</div>
+</section>
+<!-- End Book your train tickets area -->
+
+
+
+<!-- Train Booking details area -->
+<section class="train_booking_details_area">
+	<div class="container-fluid section_padding">
+		<div class="row">
+			<div class="col-md-3">
+				<div class="train_booking_details_left_space">
+
+					<div class="col-md-12 col-xs-12 quick_filters FilterTitle">
+					  	<p>Quick Filters</p>
+				  		<div class="quick_filter_check_item mrl">
+				  			<div class="form-group signin_check">
+							  <input type="checkbox" name="" id="ac" checked>
+							  <label class="active" for="ac">AC Only</label>
+							</div>
+							<div class="form-group signin_check">
+							  <input type="checkbox" name="" id="cs">
+							  <label for="cs">Confirm Seats</label>
+							</div>
+							<div class="form-group signin_check">
+							  <input type="checkbox" name="" id="act">
+							  <label for="act">5 PM - 11 PM</label>
+							</div>
+				  		</div>
+					</div>
+
+					<div class="col-md-12 col-xs-12 fileter_by_quota FilterTitle">
+					  	<p>Filter by Quota</p>
+				  		<div class="quick_filter_check_item mrl">
+				  			<div class="form-group signin_check">
+							  <input type="checkbox" name="" id="general" checked>
+							  <label class="active" for="general">General</label>
+							</div>
+							<div class="form-group signin_check">
+							  <input type="checkbox" name="" id="tatkal">
+							  <label for="tatkal">Tatkal</label>
+							</div>
+							<div class="form-group signin_check">
+							  <input type="checkbox" name="" id="ladies">
+							  <label for="ladies">Ladies</label>
+							</div>
+				  		</div>
+					</div>
+
+
+					<div class="col-xs-12 filter_by_time FilterTitle">
+					  	<p>Filter by Time</p>
+					  	<div class="timer_days_item mrl">
+						  	<!-- 1 -->
+							<div class="SelectTimer time_F1">
+						    	<div class="inner-section">
+						    		<p class="Time active">
+						    			<img src="asset/img/icons/morning-sun.svg" alt="image">05 AM - 11 AM <span><img src="asset/img/icons/check-blue.svg" alt="image"></span>
+						    		</p>
+						    	</div>
+						    </div>
+						    <!-- 2 -->
+						    <div class="SelectTimer time_F2">
+						    	<div class="inner-section">
+						    		<p class="Time">
+						    			<img src="asset/img/icons/afternoon-sun.svg" alt="image">11 AM - 05 PM <span><img src="asset/img/icons/check-gray.svg" alt="image"></span>
+						    		</p>
+						      </div>
+						    </div>
+						    <!-- 3 -->
+						    <div class="SelectTimer time_F3">
+						    	<div class="inner-section">
+						    		<p class="Time">
+						    			<img src="asset/img/icons/morning-sun.svg" alt="image">05 AM - 11 AM <span><img src="asset/img/icons/check-gray.svg" alt="image"></span>
+						    		</p>
+						    	</div>
+						    </div>
+						    <!-- 4 -->
+						    <div class="SelectTimer time_F4">
+						    	<div class="inner-section">
+						    		<p class="Time">
+						    			<img src="asset/img/icons/moon.svg" alt="image">05 AM - 11 AM <span><img src="asset/img/icons/check-gray.svg" alt="image"></span>
+						    		</p>
+						    	</div>
+						    </div>
+					    </div>
+					</div>
+
+					<div class="row">
+						<div class="col-xs-12 days_run_filter FilterTitle">
+							<p>Filter by Days of Run</p>
+						</div>
+						<div class="col-md-6 col-xs-6" id="drf">
+				      		<div class="quick_filter_check_item mrl filter_all_day">
+				      			<div class="form-group signin_check">
+								  <input type="checkbox" name="" id="monday">
+								  <label for="monday">Monday</label>
+								</div>
+								<div class="form-group signin_check">
+								  <input type="checkbox" name="" id="wednesday">
+								  <label for="wednesday">Wednesday</label>
+								</div>
+								<div class="form-group signin_check">
+								  <input type="checkbox" name="" id="friday">
+								  <label for="friday">Friday</label>
+								</div>
+								<div class="form-group signin_check">
+								  <input type="checkbox" name="" id="sunday">
+								  <label for="sunday">Sunday</label>
+								</div>
+				      		</div>
+				  		</div>
+				  		<div class="col-md-6 col-xs-6" id="drf">
+				  			<div class="quick_filter_check_item mrl filter_all_day">
+				  				<div class="form-group signin_check">
+								  <input type="checkbox" name="" id="tuesday">
+								  <label for="tuesday">Tuesday</label>
+								</div>
+								<div class="form-group signin_check">
+								  <input type="checkbox" name="" id="thursday">
+								  <label for="thursday">Thursday</label>
+								</div>
+								<div class="form-group signin_check">
+								  <input type="checkbox" name="" id="saturday">
+								  <label for="saturday">Saturday</label>
+								</div>
+								<div class="form-group signin_check">
+								  <input type="checkbox" name="" id="alldays">
+								  <label for="alldays">All Days</label>
+								</div>
+				  			</div>
+						</div>
+					</div>
+
+					<div class="col-xs-12 FilterTitle filter_by_station">
+					  	<p>Filter by Nearby Stations</p>
+					  	<div class="quick_filter_check_item mrl">
+					  		<div class="form-group signin_check">
+							  <input type="checkbox" name="" id="tfh">
+							  <label for="tfh">Trains from HYB</label>
+							</div>
+							<div class="form-group signin_check">
+							  <input type="checkbox" name="" id="tras">
+							  <label for="tras">Trains reaching at SBC</label>
+							</div>
+					  	</div>
+					</div>
+
+				</div>
+			</div>
+
+			<div class="col-md-9">
+				<div class="train_booking_details_right_space">
+					<h2>Hyderabad Deccan (HYB) to Bangalore City Jn (SBC) Trains</h2>
+					<div class="filter_train_ticket_box_area">
+						<div class="single_filter_train_ticket_box" id="inputmr">
+							<div class="top_choice_badge_filter_area">
+								<div class="filter_triger mobile_show">
+								<p><img src="asset/img/icons/filter-triger.svg" alt="image">Filter</p>
+								</div>
+								<div class="choice_badge">
+									<p><img src="asset/img/icons/badge.svg" alt="image">Top Choice</p>
+								</div>
+							</div>
+							<div class="prova_top_area d-flex justify-content-between">
+								<div class="prova_titl"><h3>POORVA EXP SPL (02304)</h3></div>
+								<div class="prova_days d-flex justify-content-center align-items-center">
+									<p>Runs On:</p>
+									<ul class="d-flex">
+										<li><a href="#">M</a></li>
+										<li><a href="#">T</a></li>
+										<li><a href="#">W</a></li>
+										<li><a href="#">T</a></li>
+										<li class="gray_c"><a href="#">F</a></li>
+										<li class="gray_c"><a href="#">S</a></li>
+										<li><a href="#">S</a></li>
+									</ul>
+								</div>
+								<div class="train_shedule">
+									<a href="#">Train Schedule</a>
+								</div>
+							</div>
+
+							<div class="date_by_time_area d-flex justify-content-between">
+								<div class="time_with_day">
+									<p><span>20:15</span> | TUNDLA JN | Wed, 10 Nov</p>
+								</div>
+								<div class="only_time text-center">
+									<p>05:00</p>
+								</div>
+								<div class="time_with_area">
+									<p><span>01:15</span> | PRAYAGRAJ JN. | Thu, 11 Nov</p>
+								</div>
+							</div>
+
+							<!-- booking detail view -->
+							<div class="booking_details_view_area">
+								<div class="seat_avilability d-flex justify-content-between">
+									<div class="day_of_seat">
+										<h3>6 Days Seat Availability</h3>
+									</div>
+									<div class="day_of_seat_date">
+										<a href="#" id=""><img src="asset/img/icons/calendar-blue.svg" alt="image">Change </a>
+									</div>
+								</div>
+
+								<div class="seat_details_price_view_box">
+									<div class="seat_details_price_view d-flex">
+										<div class="btn_price_view">
+											<a href="#" id="viewbtn1" class="active">3A | ₹ 1680</a>
+										</div>
+										<div class="btn_price_view">
+											<a href="#" id="viewbtn2">3A | ₹ 1680</a>
+										</div>
+										<div class="btn_price_view">
+											<a href="#" id="viewbtn3">3A | ₹ 1680</a>
+										</div>
+									</div>
+
+									<div class="seat_detils_single_item d-flex">
+										<div class="seat_view_date">
+											<h3>11 Nov</h3>
+											<p>Saturday</p>
+										</div>
+										<div class="seat_booking_output">
+											<h3>BOOKINGS CLOSED</h3>
+										</div>
+									</div>
+
+									<div class="seat_detils_single_item d-flex align-items-center">
+										<div class="seat_view_date">
+											<h3>12 Nov</h3>
+											<p>Sunday</p>
+										</div>
+										<div class="seat_booking_output">
+											<h3 class="light_red">RLWL32/WL19</h3>
+										</div>
+										<div class="if_seat_have">
+											<a href="#">Book Now</a>
+										</div>
+									</div>
+
+									<div class="seat_detils_single_item d-flex align-items-center">
+										<div class="seat_view_date">
+											<h3>13 Nov</h3>
+											<p>Monday</p>
+										</div>
+										<div class="seat_booking_output">
+											<h3 class="light_red">RLWL7/WL5</h3>
+										</div>
+										<div class="if_seat_have">
+											<a href="#">Book Now</a>
+										</div>
+									</div>
+
+									<div class="seat_detils_single_item d-flex align-items-center">
+										<div class="seat_view_date">
+											<h3>14 Nov</h3>
+											<p>Tuesday</p>
+										</div>
+										<div class="seat_booking_output">
+											<h3 class="light_red">RLWL11/WL8</h3>
+										</div>
+										<div class="if_seat_have">
+											<a href="#">Book Now</a>
+										</div>
+									</div>
+
+									<div class="seat_detils_single_item d-flex align-items-center">
+										<div class="seat_view_date">
+											<h3>15 Nov</h3>
+											<p>Wednesday</p>
+										</div>
+										<div class="seat_booking_output">
+											<h3 class="light_blue">RLWL2/WL1</h3>
+										</div>
+										<div class="if_seat_have">
+											<a href="#">Book Now</a>
+										</div>
+									</div>
+
+									<div class="seat_detils_single_item d-flex align-items-center">
+										<div class="seat_view_date">
+											<h3>16 Nov</h3>
+											<p>Thursday</p>
+										</div>
+										<div class="seat_booking_output">
+											<h3 class="light_blue">RLWL32/WL19</h3>
+										</div>
+										<div class="if_seat_have">
+											<a href="#">Book Now</a>
+										</div>
+									</div>
+								</div>
+							</div>
+							<!-- End booking detail view -->
+						
+						</div>
+
+						<div class="single_filter_train_ticket_box" id="inputmr">
+							<div class="top_choice_badge_filter_area">
+								<div class="filter_triger mobile_show">
+								<p><img src="asset/img/icons/filter-triger.svg" alt="image">Filter</p>
+								</div>
+								<div class="choice_badge">
+									<p><img src="asset/img/icons/badge.svg" alt="image">Top Choice</p>
+								</div>
+							</div>
+							<div class="prova_top_area d-flex justify-content-between">
+								<div class="prova_titl"><h3>POORVA EXP SPL (02304)</h3></div>
+								<div class="prova_days d-flex justify-content-center align-items-center">
+									<p>Runs On:</p>
+									<ul class="d-flex">
+										<li><a href="#">M</a></li>
+										<li><a href="#">T</a></li>
+										<li><a href="#">W</a></li>
+										<li><a href="#">T</a></li>
+										<li class="gray_c"><a href="#">F</a></li>
+										<li class="gray_c"><a href="#">S</a></li>
+										<li><a href="#">S</a></li>
+									</ul>
+								</div>
+								<div class="train_shedule">
+									<a href="#">Train Schedule</a>
+								</div>
+							</div>
+
+							<div class="date_by_time_area d-flex justify-content-between">
+								<div class="time_with_day">
+									<p><span>20:15</span> | TUNDLA JN | Wed, 10 Nov</p>
+								</div>
+								<div class="only_time text-center">
+									<p>05:00</p>
+								</div>
+								<div class="time_with_area">
+									<p><span>01:15</span> | PRAYAGRAJ JN. | Thu, 11 Nov</p>
+								</div>
+							</div>
+
+							<div class="train_ticket_book_now_items">
+								<div class="row">
+									<div class="col-md-2 col-xs-6">
+										<div class="single_train_ticket_book_now">
+											<div class="book_now_text">
+												<h4>Sleeper (SL)</h4>
+												<p>REGRET</p>
+												<h3>₹235</h3>
+											</div>
+											<div class="btn_book_now">
+												<a href="#">Book Now</a>
+											</div>
+										</div>
+									</div>
+
+									<div class="col-md-2 col-xs-6">
+										<div class="single_train_ticket_book_now">
+											<div class="book_now_text">
+												<h4>Sleeper (SL)</h4>
+												<p class="red">REGRET</p>
+												<h3>₹235</h3>
+											</div>
+											<div class="btn_book_now">
+												<a href="#">Book Now</a>
+											</div>
+										</div>
+									</div>
+
+									<div class="col-md-2 col-xs-6">
+										<div class="single_train_ticket_book_now">
+											<div class="book_now_text">
+												<h4>Sleeper (SL)</h4>
+												<p class="blue">REGRET</p>
+												<h3>₹235</h3>
+											</div>
+											<div class="btn_book_now">
+												<a href="#">Book Now</a>
+											</div>
+										</div>
+									</div>
+
+									<div class="col-md-2 col-xs-6">
+										<div class="single_train_ticket_book_now">
+											<div class="book_now_text">
+												<h4>Sleeper (SL)</h4>
+												<p>REGRET</p>
+												<h3>₹235</h3>
+											</div>
+											<div class="btn_book_now">
+												<a href="#">Book Now</a>
+											</div>
+										</div>
+									</div>
+
+									<div class="col-md-2 col-xs-6">
+										<div class="single_train_ticket_book_now">
+											<div class="book_now_text">
+												<h4>Sleeper (SL)</h4>
+												<p class="red">REGRET</p>
+												<h3>₹235</h3>
+											</div>
+											<div class="btn_book_now">
+												<a href="#">Book Now</a>
+											</div>
+										</div>
+									</div>
+
+									<div class="col-md-2 col-xs-6">
+										<div class="single_train_ticket_book_now">
+											<div class="book_now_text">
+												<h4>Sleeper (SL)</h4>
+												<p class="blue">REGRET</p>
+												<h3>₹235</h3>
+											</div>
+											<div class="btn_book_now">
+												<a href="#">Book Now</a>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<div class="others_date_btn">
+								<a href="#">OTHER DATES</a>
+							</div>
+						</div>
+
+						<div class="single_filter_train_ticket_box">
+							<div class="top_choice_badge_filter_area">
+								<div class="filter_triger mobile_show">
+								<p><img src="asset/img/icons/filter-triger.svg" alt="image">Filter</p>
+								</div>
+								<div class="choice_badge">
+									<p><img src="asset/img/icons/badge.svg" alt="image">Top Choice</p>
+								</div>
+							</div>
+							<div class="prova_top_area d-flex justify-content-between">
+								<div class="prova_titl"><h3>POORVA EXP SPL (02304)</h3></div>
+								<div class="prova_days d-flex justify-content-center align-items-center">
+									<p>Runs On:</p>
+									<ul class="d-flex">
+										<li><a href="#">M</a></li>
+										<li><a href="#">T</a></li>
+										<li><a href="#">W</a></li>
+										<li><a href="#">T</a></li>
+										<li class="gray_c"><a href="#">F</a></li>
+										<li class="gray_c"><a href="#">S</a></li>
+										<li><a href="#">S</a></li>
+									</ul>
+								</div>
+								<div class="train_shedule">
+									<a href="#">Train Schedule</a>
+								</div>
+							</div>
+
+							<div class="date_by_time_area d-flex justify-content-between">
+								<div class="time_with_day">
+									<p><span>20:15</span> | TUNDLA JN | Wed, 10 Nov</p>
+								</div>
+								<div class="only_time text-center">
+									<p>05:00</p>
+								</div>
+								<div class="time_with_area">
+									<p><span>01:15</span> | PRAYAGRAJ JN. | Thu, 11 Nov</p>
+								</div>
+							</div>
+
+							<div class="train_ticket_book_now_items">
+								<div class="row">
+									<div class="col-md-2 col-xs-6">
+										<div class="single_train_ticket_book_now">
+											<div class="book_now_text">
+												<h4>Sleeper (SL)</h4>
+												<p>REGRET</p>
+												<h3>₹235</h3>
+											</div>
+											<div class="btn_book_now">
+												<a href="#">Book Now</a>
+											</div>
+										</div>
+									</div>
+
+									<div class="col-md-2 col-xs-6">
+										<div class="single_train_ticket_book_now">
+											<div class="book_now_text">
+												<h4>Sleeper (SL)</h4>
+												<p class="red">REGRET</p>
+												<h3>₹235</h3>
+											</div>
+											<div class="btn_book_now">
+												<a href="#">Book Now</a>
+											</div>
+										</div>
+									</div>
+
+									<div class="col-md-2 col-xs-6">
+										<div class="single_train_ticket_book_now">
+											<div class="book_now_text">
+												<h4>Sleeper (SL)</h4>
+												<p class="blue">REGRET</p>
+												<h3>₹235</h3>
+											</div>
+											<div class="btn_book_now">
+												<a href="#">Book Now</a>
+											</div>
+										</div>
+									</div>
+
+									<div class="col-md-2 col-xs-6">
+										<div class="single_train_ticket_book_now">
+											<div class="book_now_text">
+												<h4>Sleeper (SL)</h4>
+												<p>REGRET</p>
+												<h3>₹235</h3>
+											</div>
+											<div class="btn_book_now">
+												<a href="#">Book Now</a>
+											</div>
+										</div>
+									</div>
+
+									<div class="col-md-2 col-xs-6">
+										<div class="single_train_ticket_book_now">
+											<div class="book_now_text">
+												<h4>Sleeper (SL)</h4>
+												<p class="red">REGRET</p>
+												<h3>₹235</h3>
+											</div>
+											<div class="btn_book_now">
+												<a href="#">Book Now</a>
+											</div>
+										</div>
+									</div>
+
+									<div class="col-md-2 col-xs-6">
+										<div class="single_train_ticket_book_now">
+											<div class="book_now_text">
+												<h4>Sleeper (SL)</h4>
+												<p class="blue">REGRET</p>
+												<h3>₹235</h3>
+											</div>
+											<div class="btn_book_now">
+												<a href="#">Book Now</a>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<div class="others_date_btn">
+								<a href="#">OTHER DATES</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+<!-- End Train Booking details area -->
+
+
+<!-- Footer area -->
+	<!-- footer top -->
+<section class="footer_top_area">
+	<div class="container-fluid section_padding">
+
+		<div class="row mobile_show tablet_show">
+			<div class="col-md-12">
+				<div class="footer_logo">
+					<a href="#"><img src="asset/img/logo/Logo.svg" alt="Logo"></a>
+				</div>
+			</div>
+			<div class="col-md-12">
+				<div class="mobile_footer_area">
+					<div class="accordion" id="accordionExample">
+					  <div class="accordion-item">
+					    <h2 class="accordion-header" id="headingOne">
+					      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+					       About Tesco
+					      </button>
+					    </h2>
+					    <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+					      <div class="accordion-body">
+					        <ul>
+					        	<li><a href="#">Store vacancies</a></li>
+					        	<li><a href="#">Careers</a></li>
+					        	<li><a href="#">Tesco PLC</a></li>
+					        	<li><a href="#">Our little helps</a></li>
+					        </ul>
+					      </div>
+					    </div>
+					  </div>
+
+					  <div class="accordion-item">
+					    <h2 class="accordion-header" id="headingOne">
+					      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapsetwo" aria-expanded="false" aria-controls="collapsetwo">
+					       Here to help
+					      </button>
+					    </h2>
+					    <div id="collapsetwo" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+					      <div class="accordion-body">
+					        <ul>
+					        	<li><a href="#">Help & FAQs</a></li>
+					        	<li><a href="#">Contact us</a></li>
+					        </ul>
+					      </div>
+					    </div>
+					  </div>
+
+					  <div class="accordion-item">
+					    <h2 class="accordion-header" id="headingOne">
+					      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapsethree" aria-expanded="false" aria-controls="collapsethree">
+					       Useful links
+					      </button>
+					    </h2>
+					    <div id="collapsethree" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+					      <div class="accordion-body">
+					        <ul>
+					        	<li><a href="#">Pharmacy</a></li>
+					        	<li><a href="#">Product recall</a></li>
+					        	<li><a href="#">Store locator</a></li>
+					        	<li><a href="#">Bags of Help</a></li>
+					        	<li><a href="#">Rate this page</a></li>
+					        </ul>
+					      </div>
+					    </div>
+					  </div>
+
+					  <div class="accordion-item">
+					    <h2 class="accordion-header" id="headingOne">
+					      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapsefour" aria-expanded="false" aria-controls="collapsefour">
+					       Our website
+					      </button>
+					    </h2>
+					    <div id="collapsefour" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+					      <div class="accordion-body">
+					        <ul>
+					        	<li><a href="#">Terms & conditions</a></li>
+					        	<li><a href="#">Privacy & cookies policy</a></li>
+					        	<li><a href="#">Privacy centre</a></li>
+					        	<li><a href="#">Site map</a></li>
+					        	<li><a href="#">Accessibility</a></li>
+					        </ul>
+					      </div>
+					    </div>
+					  </div>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-12">
+				<div class="footer_social_icon">
+					<ul class="d-flex justify-content-center">
+						<li>Follow us:</li>
+						<li><a href="#"><img src="asset/img/social/twitter.png" alt=""></a></li>
+						<li><a href="#"><img src="asset/img/social/googleplus.png" alt=""></a></li>
+						<li><a href="#"><img src="asset/img/social/facebook.png" alt=""></a></li>
+						<li><a href="#"><img src="asset/img/social/instagram.png" alt=""></a></li>
+						<li><a href="#"><img src="asset/img/social/bell.png" alt=""></a></li>
+						<li><a href="#"><img src="asset/img/social/vimeo.png" alt=""></a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+
+		<div class="row desktop_show">
+			<div class="col-md-3">
+				<div class="footer_logo">
+					<a href="#"><img src="asset/img/logo/Logo.svg" alt="Logo"></a>
+				</div>
+			</div>
+
+			<div class="col-md-2">
+				<div class="footer_menu">
+					<ul>
+						<li><a href="#">Here to help</a></li>
+						<li><a href="#">Help & FAQs</a></li>
+						<li><a href="#">Contact us</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="col-md-2">
+				<div class="footer_menu">
+					<ul>
+						<li><a href="#">About Tesco</a></li>
+						<li><a href="#">Store vacancies</a></li>
+						<li><a href="#">Careers</a></li>
+						<li><a href="#">Tesco PLC</a></li>
+						<li><a href="#">Our little helps</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="col-md-3">
+				<div class="footer_menu">
+					<ul>
+						<li><a href="#">Our website</a></li>
+						<li><a href="#">Terms & conditions</a></li>
+						<li><a href="#">Privacy & cookies policy</a></li>
+						<li><a href="#">Privacy centre</a></li>
+						<li><a href="#">Site map</a></li>
+						<li><a href="#">Accessibility</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="col-md-2">
+				<div class="footer_menu">
+					<ul>
+						<li><a href="#">Useful links</a></li>
+						<li><a href="#">Pharmacy</a></li>
+						<li><a href="#">Product recall</a></li>
+						<li><a href="#">Store locator</a></li>
+						<li><a href="#">Bags of Help</a></li>
+						<li><a href="#">Rate this page</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="col-md-12">
+				<div class="footer_social_icon">
+					<ul class="d-flex">
+						<li>Follow us:</li>
+						<li><a href="#"><img src="asset/img/social/twitter.png" alt=""></a></li>
+						<li><a href="#"><img src="asset/img/social/googleplus.png" alt=""></a></li>
+						<li><a href="#"><img src="asset/img/social/facebook.png" alt=""></a></li>
+						<li><a href="#"><img src="asset/img/social/instagram.png" alt=""></a></li>
+						<li><a href="#"><img src="asset/img/social/bell.png" alt=""></a></li>
+						<li><a href="#"><img src="asset/img/social/vimeo.png" alt=""></a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+	<!-- end footer top -->
+
+	<!-- footer bottom -->
+<section class="footer_bootom">
+	<div class="container-fluid section_padding text-center">
+		<p>©2021 RailYatri.in. All Rights Reserved</p>
+	</div>
+</section>
+	<!-- end footer bottom -->
+<!-- End Footer area -->
+
+
+
+</div>
+<!-- End body code start here -->
+
+
+
+
+<!-- jquery -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" ></script>
+<!-- bootstrap bundle -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+<!-- jquery ui -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+<!-- slick js -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+<!-- main js -->
+<script src="asset/js/custom.js"></script>
+
+
+</body>
+</html>
